@@ -5,8 +5,11 @@ import torch.optim as optim
 import yaml
 import datetime
 from torch.utils.data import DataLoader, Dataset
+import torch.nn.functional as F
 from ml.models.mesh_model import MESHModel
 from pipelines.training.tracker import ExperimentTracker
+
+PREV_STATS = {}
 from ml.data.mock_canonical_batch import generate_mock_canonical_batch
 from ml.data.contract import CanonicalBatch
 
@@ -53,7 +56,7 @@ def collate_fn(batch_list):
         window_start=[0.0 for _ in batch_list],
         window_end=[20.0 for _ in batch_list],
         sampling_interval_seconds=[1.0 for _ in batch_list],
-        native_modalities=batch_list[0].get('native_modalities', ["temperature", "vibration", "rotational_speed", "torque"]),
+        native_modalities=batch_list[0].get('native_modalities', ["temperature", "tool_wear", "rotational_speed", "torque"]),
         preprocessor_version=["v1" for _ in batch_list],
         scaler_version=["v1" for _ in batch_list],
         modality_values={k: torch.stack(v) for k, v in modality_values.items()},
@@ -75,7 +78,7 @@ def main():
     seed = train_config['seed']
     torch.manual_seed(seed)
     
-    native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
     cnn_in_channels_map = {m: 1 for m in native_modalities}
     
     model = MESHModel(
@@ -126,7 +129,7 @@ def main():
         model.train()
         train_loss = 0.0
         
-        for batch in train_loader:
+        for step, batch in enumerate(train_loader):
             optimizer.zero_grad()
             
             # Move to device
@@ -136,18 +139,78 @@ def main():
             y_fault = batch.target_fault_class.to(device)
             y_anomaly = batch.target_degradation.to(device)
             
+            # Modality Dropout (regularization during training)
+            modality_dropout_p = train_config.get('modality_dropout_p', 0.0)
+            if modality_dropout_p > 0.0:
+                drop_mask = (torch.rand_like(modality_mask) > modality_dropout_p).float()
+                
+                # Apply dropout to the mask (values remain untouched)
+                modality_mask = modality_mask * drop_mask
+                
+                # Prevent ALL modalities from being dropped for any sample in the final mask.
+                # Even though nan_to_num handles forward pass NaNs, MHA backward pass computes 0 * NaN = NaN,
+                # causing gradient explosion if a sample is fully masked.
+                all_dropped = (modality_mask.sum(dim=1) == 0)
+                if all_dropped.any():
+                    # For each sample where all were dropped, restore one originally available modality
+                    original_mask = batch.modality_mask.to(device)
+                    for i in range(modality_mask.shape[0]):
+                        if all_dropped[i]:
+                            valid_indices = torch.nonzero(original_mask[i]).squeeze(-1)
+                            if len(valid_indices) > 0:
+                                rand_idx = valid_indices[torch.randint(0, len(valid_indices), (1,))]
+                                modality_mask[i, rand_idx] = 1.0
+                            else:
+                                modality_mask[i, 0] = 1.0
+                
             # Forward pass
             preds, _ = model(modality_values, modality_mask)
+            
+            # Loss computation
+            y_rul = batch.target_rul.to(device)
+            y_fault = batch.target_fault_class.to(device)
+            y_anomaly = batch.target_degradation.to(device)
             
             # RUL NLL Loss with scaled targets
             y_rul_scaled = (y_rul - rul_mean_stat) / (rul_std_stat + 1e-6)
             loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
-            loss_fault = fault_criterion(preds['fault_logits'], y_fault)
-            loss_anomaly = anomaly_criterion(preds['anomaly_logit'], y_anomaly)
             
-            # Weighted multi-task loss
+            # Fault CrossEntropy Loss
+            loss_fault = F.cross_entropy(preds['fault_logits'], y_fault)
+            
+            # Anomaly BCE Loss
+            loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
+            
+            # Weighted Total Loss
             w = train_config['loss_weights']
             loss = w['rul'] * loss_rul + w['fault'] * loss_fault + w['anomaly'] * loss_anomaly
+            
+            # DIAGNOSTIC CHECK
+            if torch.isnan(loss):
+                print(f"!!! NaN DETECTED at Epoch {epoch}, Step {step} !!!")
+                print(f"loss_rul: {loss_rul.item()}, loss_fault: {loss_fault.item()}, loss_anomaly: {loss_anomaly.item()}")
+                print(f"rul_variance min: {preds['rul_variance'].min().item()}, max: {preds['rul_variance'].max().item()}")
+                print(f"rul_mean min: {preds['rul_mean'].min().item()}, max: {preds['rul_mean'].max().item()}")
+                try:
+                    print(f"PREV_STATS: {PREV_STATS}")
+                except NameError:
+                    pass
+                
+                # Let's also check if any model parameters are NaN
+                for name, param in model.named_parameters():
+                    if torch.isnan(param).any():
+                        print(f"Parameter {name} has NaNs!")
+                raise ValueError("NaN loss encountered")
+            
+            # We also want to capture the step immediately before NaN, but since we don't know when it happens until it does,
+            # we can store the previous step's stats.
+            PREV_STATS = {
+                'epoch': epoch,
+                'step': step,
+                'rul_variance_min': preds['rul_variance'].min().item(),
+                'rul_mean_min': preds['rul_mean'].min().item(),
+                'rul_mean_max': preds['rul_mean'].max().item(),
+            }
             
             # Backward pass
             loss.backward()
@@ -179,8 +242,8 @@ def main():
                 preds, _ = model(modality_values, modality_mask)
                 y_rul_scaled = (y_rul - rul_mean_stat) / (rul_std_stat + 1e-6)
                 loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
-                loss_fault = fault_criterion(preds['fault_logits'], y_fault)
-                loss_anomaly = anomaly_criterion(preds['anomaly_logit'], y_anomaly)
+                loss_fault = F.cross_entropy(preds['fault_logits'], y_fault)
+                loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
                 
                 loss = w['rul'] * loss_rul + w['fault'] * loss_fault + w['anomaly'] * loss_anomaly
                 val_loss += loss.item()

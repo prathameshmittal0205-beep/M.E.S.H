@@ -1,12 +1,12 @@
 # MESH Project: Final Technical Report
 
 ## 1. Documentation & Data Contract
-* **Documentation Read:** `docs/model/MODEL_SPEC.md`, `docs/data/DATA_DICTIONARY.md`, `docs/architecture/SYSTEM_ARCHITECTURE.md`, `docs/training/TRAINING_EVALUATION.md`, `docs/training/MISSING_MODALITY_EXPERIMENTS.md`, `docs/explainability/EXPLAINABILITY.md`, and `docs/data/DATA_PIPELINE.md`.
+* **Documentation Read:** `docs/model/MODEL_SPEC.md`, `docs/data/DATA_DICTIONARY.md`, `docs/architecture/SYSTEM_ARCHITECTURE.md`, `docs/training/TRAINING_EVALUATION.md`, `docs/training/MISSING_MODALITY_EXPERIMENTS.md`, `docs/explainability/EXPLAINABILITY.md`, `docs/data/DATA_PIPELINE.md`, `docs/model/UNCERTAINTY_CALIBRATION.md`, `docs/team/PRATHAMESH_MODEL.md`, `docs/team/INTEGRATION_CONTRACT.md`, `docs/DEFINITION_OF_DONE.md`, `docs/data/DATASET_STRATEGY.md`, `docs/data/DATA_PROVENANCE.md`, and `docs/NO_HALLUCINATION_POLICY.md`.
 * **Data Contract Consumed:** Implemented and validated `CanonicalBatch` according to the exact Pydantic spec (`ml/data/contract.py`), allowing arbitrary tensors and strictly typing all metadata.
 
 ## 2. Architecture Implemented
 Implemented the `MESHModel` (`ml/models/mesh_model.py`) natively in PyTorch:
-* **Modality Encoders:** 1D CNNs (kernel=3, out_channels=8) into Bidirectional LSTMs (hidden=16) per modality (`temperature`, `vibration`, `rotational_speed`, `torque`).
+* **Modality Encoders:** 1D CNNs (kernel=3, out_channels=8) into Bidirectional LSTMs (hidden=16) per modality (`temperature`, `tool_wear`, `rotational_speed`, `torque`).
 * **Fusion:** Mask-Aware Cross-Attention (`ml/models/fusion.py`) using PyTorch's `MultiheadAttention`. Missing modalities are explicitly zeroed out of the attention softmax (both queries and keys) using `-inf` masking.
 * **Temporal Refiner:** Standard TransformerEncoder layer processing the fused sequence.
 * **Heads:** 
@@ -54,7 +54,7 @@ Built strict PyTest suites (`tests/ml/`) that are **100% Passing**:
 > **Mock Data Performance:** All metrics, attributions, and variance boundaries currently reflect convergence on uniform noise. The model currently exhibits majority-class collapse (expected) and tiny/random feature attributions. Real predictive evaluation is pending actual data.
 
 > [!WARNING]
-> **Epistemic Uncertainty limitation:** Our missing-modality experiment empirically proved that NLL (Aleatoric) variance remains completely flat (~3060) when input modalities drop out. The loss formulation measures target noise, not model confidence. An Epistemic method (like MC Dropout) MUST be implemented before deployment to flag "I don't know" when sensors fail.
+> **Epistemic Uncertainty limitation:** Our missing-modality experiment empirically proved that NLL (Aleatoric) variance remains completely flat (~3060) when input modalities drop out. The loss formulation measures target noise, not model confidence. An Epistemic method (like MC Dropout) MUST be implemented before deployment to flag "I don't know" when sensors fail. **Update:** MC Dropout as an epistemic method is now supported by an actual modality-dropout-trained model (implemented as a p=0.15 regularizer during training), rather than being justified by a mechanism that didn't exist yet.
 
 > [!WARNING]
 > **Hardcoded Normalization:** RUL target normalization stats (mean, std) are currently hardcoded placeholders injected during training initialization. These must be replaced with the actual dataset statistics computed by Naman's preprocessor.
@@ -67,7 +67,7 @@ Built strict PyTest suites (`tests/ml/`) that are **100% Passing**:
 
 ## 12. Open Issues (For Naman)
 > [!IMPORTANT]
-> **Dataset Choice Ambiguity:** The Model Spec assumes 4 specific channels (`temperature`, `vibration`, `rotational_speed`, `torque`). However, AI4I has 5 features, NASA CMAPSS has 21, and QIT-CEMC has 2. Naman must explicitly lock in the dataset choice and update the Preprocessor output to match the 4 expected channels, or the model's `native_modalities` config must be updated to align with the chosen dataset.
+> **Dataset Selection & Modality Alignment:** Per the project README, AI4I 2020 is a synthetic benchmark only and cannot be used for our real-data claims. The real candidate datasets are NASA FEMTO/PRONOSTIA, NASA IMS Bearings, NASA Milling Wear, and QIT-CEMC. Because no single real dataset perfectly provides the original DA1 four channels (temperature, rotational speed, torque, tool wear) alongside a clean RUL target, Naman must finalize the real dataset selection and output its **native** channels. We will not fabricate a 4-channel dataset. Once the real dataset is chosen, the model's `native_modalities` configuration must be updated to align with the actual sensors provided by that dataset.
 
 ## 13. Quality Assurance: Bugs Caught & Resolved
 The following concrete issues were caught and fixed during the interactive modeling phase, documented here as a historical record for the team:
@@ -78,3 +78,4 @@ The following concrete issues were caught and fixed during the interactive model
 * **Explainability Payload Bloat:** `attention_weights` were silently stripped from the inference bundle; fixed via an explicit `return_attention` opt-in parameter.
 * **Silent Test Passes:** `test_masked_modality_zeroing` had a conditional `hasattr` guard that could silently skip the test; replaced with a hard assertion.
 * **Checkpoint Test Fallacy:** `test_checkpoint_roundtrip` originally tested `load -> load` agreement rather than `save -> load` fidelity; rewriting to a true save-and-reload cycle caught two real downstream schema and variance-conversion bugs.
+* **Modality Naming Mismatch:** Modality naming mismatch (vibration vs. spec's tool_wear) and missing modality-dropout regularizer, caught via a second documentation pass against the project README.

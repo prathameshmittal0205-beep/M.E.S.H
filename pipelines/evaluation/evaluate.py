@@ -79,7 +79,7 @@ def evaluate_model(checkpoint_path: str):
     
     print(f"Extracted Normalization Stats -> Mean: {rul_mean_stat}, Std: {rul_std_stat}")
     
-    native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
     cnn_in_channels_map = {m: 1 for m in native_modalities}
     
     model = MESHModel(

@@ -16,12 +16,12 @@ def test_canonical_batch_validation():
         "window_start": [0, 0],
         "window_end": [20, 20],
         "sampling_interval_seconds": [1.0, 1.0],
-        "native_modalities": ["temperature", "vibration", "rotational_speed", "torque"],
+        "native_modalities": ["temperature", "tool_wear", "rotational_speed", "torque"],
         "preprocessor_version": ["v1", "v1"],
         "scaler_version": ["v1", "v1"],
         "modality_values": {
             "temperature": torch.randn(2, 20, 1),
-            "vibration": torch.randn(2, 20, 1),
+            "tool_wear": torch.randn(2, 20, 1),
             "rotational_speed": torch.randn(2, 20, 1),
             "torque": torch.randn(2, 20, 1)
         },
@@ -47,12 +47,12 @@ def test_canonical_batch_failure_missing_field():
         "window_start": [0, 0],
         "window_end": [20, 20],
         "sampling_interval_seconds": [1.0, 1.0],
-        "native_modalities": ["temperature", "vibration", "rotational_speed", "torque"],
+        "native_modalities": ["temperature", "tool_wear", "rotational_speed", "torque"],
         "preprocessor_version": ["v1", "v1"],
         "scaler_version": ["v1", "v1"],
         "modality_values": {
             "temperature": torch.randn(2, 20, 1),
-            "vibration": torch.randn(2, 20, 1),
+            "tool_wear": torch.randn(2, 20, 1),
             "rotational_speed": torch.randn(2, 20, 1),
             "torque": torch.randn(2, 20, 1)
         },
@@ -103,8 +103,8 @@ def test_checkpoint_roundtrip(tmp_path):
     
     # Minimal config to instantiate MESHModel
     config = {
-        "native_modalities": ["temperature", "vibration", "rotational_speed", "torque"],
-        "cnn_in_channels_map": {"temperature": 1, "vibration": 1, "rotational_speed": 1, "torque": 1},
+        "native_modalities": ["temperature", "tool_wear", "rotational_speed", "torque"],
+        "cnn_in_channels_map": {"temperature": 1, "tool_wear": 1, "rotational_speed": 1, "torque": 1},
         "encoder_config": {"cnn_out_channels": 8, "cnn_kernel_size": 3, "bilstm_hidden_size": 16, "bilstm_num_layers": 1},
         "fusion_config": {"embed_dim": 32, "num_heads": 2, "dropout": 0.1},
         "temporal_config": {"d_model": 32, "nhead": 2, "num_layers": 1, "dim_feedforward": 16, "dropout": 0.1},

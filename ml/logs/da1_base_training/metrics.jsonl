@@ -1,0 +1,1193 @@
+{"step": 0, "timestamp": "2026-09-13T23:38:39.257842", "train/loss/total": 2.97396183013916, "train/loss/rul": 1.189238429069519, "train/loss/fault": 1.0896532535552979, "train/loss/anomaly": 0.6950703859329224}
+{"step": 1, "timestamp": "2026-09-13T23:38:40.683141", "train/loss/total": 2.653862476348877, "train/loss/rul": 0.7467314600944519, "train/loss/fault": 1.2017803192138672, "train/loss/anomaly": 0.7053506970405579}
+{"step": 2, "timestamp": "2026-09-13T23:38:41.464556", "train/loss/total": 2.415175437927246, "train/loss/rul": 0.5673766136169434, "train/loss/fault": 1.1476609706878662, "train/loss/anomaly": 0.7001379132270813}
+{"step": 3, "timestamp": "2026-09-13T23:38:42.230486", "train/loss/total": 2.488971471786499, "train/loss/rul": 0.6973405480384827, "train/loss/fault": 1.1066194772720337, "train/loss/anomaly": 0.6850113272666931}
+{"step": 4, "timestamp": "2026-09-13T23:38:42.926224", "train/loss/total": 2.334531307220459, "train/loss/rul": 0.5500590801239014, "train/loss/fault": 1.082649827003479, "train/loss/anomaly": 0.7018222808837891}
+{"step": 0, "timestamp": "2026-09-13T23:38:43.298740", "val/loss/total": 2.24526584148407}
+{"step": 5, "timestamp": "2026-09-13T23:38:44.137387", "train/loss/total": 2.5522549152374268, "train/loss/rul": 0.6471586227416992, "train/loss/fault": 1.2109609842300415, "train/loss/anomaly": 0.6941352486610413}
+{"step": 6, "timestamp": "2026-09-13T23:38:45.176397", "train/loss/total": 2.539484739303589, "train/loss/rul": 0.6861282587051392, "train/loss/fault": 1.1682554483413696, "train/loss/anomaly": 0.6851010918617249}
+{"step": 7, "timestamp": "2026-09-13T23:38:45.457480", "train/loss/total": 2.348132848739624, "train/loss/rul": 0.5338606834411621, "train/loss/fault": 1.1200085878372192, "train/loss/anomaly": 0.6942635774612427}
+{"step": 8, "timestamp": "2026-09-13T23:38:45.703125", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:38:45.916227", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:38:46.051548", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:38:46.448299", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:38:46.985291", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:38:47.514201", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:38:48.169335", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:38:48.702222", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:38:48.935915", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:38:49.752139", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:38:50.375956", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:38:50.924697", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:38:51.427260", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:38:51.955025", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:38:52.178525", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:38:52.672369", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:38:53.158086", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:38:53.770956", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:38:54.390361", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:38:54.988807", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:38:55.249766", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:38:55.810947", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 26, "timestamp": "2026-09-13T23:38:56.378430", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 27, "timestamp": "2026-09-13T23:38:56.914203", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 28, "timestamp": "2026-09-13T23:38:57.434694", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:38:57.945739", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:38:58.198837", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:38:58.813451", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:38:59.339411", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:39:00.017534", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:39:00.723773", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:39:01.321256", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:39:01.587304", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:39:02.185443", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:39:02.814862", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:39:03.238173", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:39:03.511003", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:39:03.795702", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:39:03.934028", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:39:04.188223", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:39:04.426125", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:39:04.626920", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:39:04.845333", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:39:05.041956", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:39:05.126229", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:39:05.370857", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:39:05.579556", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:39:05.816438", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:39:06.093738", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:39:06.328253", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:39:06.440803", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:39:06.738235", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:39:06.973866", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:39:07.179749", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:39:07.405264", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:39:07.585313", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:39:07.696235", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:39:07.908569", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:39:08.007590", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:39:08.109809", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:39:08.216889", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:39:08.320631", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:39:08.363846", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:39:08.552932", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:39:08.834416", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:39:09.109379", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:39:09.384331", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:39:09.598363", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:39:09.689620", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:39:09.894610", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:39:10.147385", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:39:10.399064", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:39:10.643137", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:39:10.894206", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:39:10.986165", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:39:11.295595", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:39:11.633698", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:39:11.911355", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:39:12.148275", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:39:12.441342", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:39:12.592716", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:39:12.891563", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:39:13.179908", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:39:13.407421", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:39:13.648063", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:39:13.864711", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:39:13.945763", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:39:14.172849", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:39:14.381883", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:39:14.565005", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:39:14.742652", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:39:14.930839", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:39:15.006370", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:39:15.184397", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:39:15.376371", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:39:15.658497", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:39:15.913209", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:39:16.212338", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:39:16.306797", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:39:16.536010", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:39:16.742029", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:39:17.090054", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:39:17.381979", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:39:17.596661", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:39:17.682843", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:39:17.931233", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:39:18.102280", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:39:18.356561", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:39:18.537123", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:39:18.757002", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:39:18.843590", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:39:35.097993", "train/loss/total": 2.97396183013916, "train/loss/rul": 1.189238429069519, "train/loss/fault": 1.0896532535552979, "train/loss/anomaly": 0.6950703859329224}
+{"step": 1, "timestamp": "2026-09-13T23:39:35.277374", "train/loss/total": 2.653862476348877, "train/loss/rul": 0.7467314600944519, "train/loss/fault": 1.2017803192138672, "train/loss/anomaly": 0.7053506970405579}
+{"step": 2, "timestamp": "2026-09-13T23:39:35.455833", "train/loss/total": 2.415175437927246, "train/loss/rul": 0.5673766136169434, "train/loss/fault": 1.1476609706878662, "train/loss/anomaly": 0.7001379132270813}
+{"step": 3, "timestamp": "2026-09-13T23:39:35.650946", "train/loss/total": 2.488971471786499, "train/loss/rul": 0.6973405480384827, "train/loss/fault": 1.1066194772720337, "train/loss/anomaly": 0.6850113272666931}
+{"step": 4, "timestamp": "2026-09-13T23:39:35.851542", "train/loss/total": 2.334531307220459, "train/loss/rul": 0.5500590801239014, "train/loss/fault": 1.082649827003479, "train/loss/anomaly": 0.7018222808837891}
+{"step": 0, "timestamp": "2026-09-13T23:39:35.950941", "val/loss/total": 2.24526584148407}
+{"step": 5, "timestamp": "2026-09-13T23:39:36.266638", "train/loss/total": 2.5522549152374268, "train/loss/rul": 0.6471586227416992, "train/loss/fault": 1.2109609842300415, "train/loss/anomaly": 0.6941352486610413}
+{"step": 6, "timestamp": "2026-09-13T23:39:36.534689", "train/loss/total": 2.539484739303589, "train/loss/rul": 0.6861282587051392, "train/loss/fault": 1.1682554483413696, "train/loss/anomaly": 0.6851010918617249}
+{"step": 7, "timestamp": "2026-09-13T23:39:36.799440", "train/loss/total": 2.348132848739624, "train/loss/rul": 0.5338606834411621, "train/loss/fault": 1.1200085878372192, "train/loss/anomaly": 0.6942635774612427}
+{"step": 8, "timestamp": "2026-09-13T23:39:37.021695", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:39:37.213154", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:39:37.293200", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:39:37.478316", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:39:37.668705", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:39:37.903811", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:39:38.144197", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:39:38.352104", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:39:38.470661", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:39:38.715625", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:39:38.945451", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:39:39.127599", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:39:39.323871", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:39:39.524931", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:39:39.599090", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:39:39.777168", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:39:40.004941", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:39:40.256119", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:39:40.514244", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:39:40.733968", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:39:40.855107", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:39:41.110312", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:40:09.295863", "train/loss/total": 2.97396183013916, "train/loss/rul": 1.189238429069519, "train/loss/fault": 1.0896532535552979, "train/loss/anomaly": 0.6950703859329224}
+{"step": 1, "timestamp": "2026-09-13T23:40:09.477956", "train/loss/total": 2.653862476348877, "train/loss/rul": 0.7467314600944519, "train/loss/fault": 1.2017803192138672, "train/loss/anomaly": 0.7053506970405579}
+{"step": 2, "timestamp": "2026-09-13T23:40:09.681246", "train/loss/total": 2.415175437927246, "train/loss/rul": 0.5673766136169434, "train/loss/fault": 1.1476609706878662, "train/loss/anomaly": 0.7001379132270813}
+{"step": 3, "timestamp": "2026-09-13T23:40:09.901887", "train/loss/total": 2.488971471786499, "train/loss/rul": 0.6973405480384827, "train/loss/fault": 1.1066194772720337, "train/loss/anomaly": 0.6850113272666931}
+{"step": 4, "timestamp": "2026-09-13T23:40:10.172711", "train/loss/total": 2.334531307220459, "train/loss/rul": 0.5500590801239014, "train/loss/fault": 1.082649827003479, "train/loss/anomaly": 0.7018222808837891}
+{"step": 0, "timestamp": "2026-09-13T23:40:10.253882", "val/loss/total": 2.24526584148407}
+{"step": 5, "timestamp": "2026-09-13T23:40:10.498357", "train/loss/total": 2.5522549152374268, "train/loss/rul": 0.6471586227416992, "train/loss/fault": 1.2109609842300415, "train/loss/anomaly": 0.6941352486610413}
+{"step": 6, "timestamp": "2026-09-13T23:40:10.714836", "train/loss/total": 2.539484739303589, "train/loss/rul": 0.6861282587051392, "train/loss/fault": 1.1682554483413696, "train/loss/anomaly": 0.6851010918617249}
+{"step": 7, "timestamp": "2026-09-13T23:40:10.941220", "train/loss/total": 2.348132848739624, "train/loss/rul": 0.5338606834411621, "train/loss/fault": 1.1200085878372192, "train/loss/anomaly": 0.6942635774612427}
+{"step": 8, "timestamp": "2026-09-13T23:40:11.217189", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:40:11.486116", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:40:11.604597", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:40:11.833081", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:40:12.076180", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:40:12.322481", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:40:12.609231", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:40:12.834593", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:40:12.911782", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:40:13.135137", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:40:13.375140", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:40:13.590743", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:40:13.775787", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:40:13.970166", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:40:14.050351", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:40:14.251853", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:40:14.477119", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:40:14.699932", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:40:14.874735", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:40:15.063146", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:40:15.137231", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:40:15.313798", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 26, "timestamp": "2026-09-13T23:40:15.494678", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 27, "timestamp": "2026-09-13T23:40:15.712080", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 28, "timestamp": "2026-09-13T23:40:15.889232", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:40:16.068389", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:40:16.143436", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:40:16.321065", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:40:16.508483", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:40:16.783611", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:40:17.051134", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:40:17.312845", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:40:17.409825", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:40:17.670992", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:40:17.945485", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:40:18.159528", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:40:18.338429", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:40:18.551718", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:40:18.658676", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:40:18.938417", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:40:45.760836", "train/loss/total": 2.97396183013916, "train/loss/rul": 1.189238429069519, "train/loss/fault": 1.0896532535552979, "train/loss/anomaly": 0.6950703859329224}
+{"step": 1, "timestamp": "2026-09-13T23:40:45.981718", "train/loss/total": 2.653862476348877, "train/loss/rul": 0.7467314600944519, "train/loss/fault": 1.2017803192138672, "train/loss/anomaly": 0.7053506970405579}
+{"step": 2, "timestamp": "2026-09-13T23:40:46.213401", "train/loss/total": 2.415175437927246, "train/loss/rul": 0.5673766136169434, "train/loss/fault": 1.1476609706878662, "train/loss/anomaly": 0.7001379132270813}
+{"step": 3, "timestamp": "2026-09-13T23:40:46.428534", "train/loss/total": 2.488971471786499, "train/loss/rul": 0.6973405480384827, "train/loss/fault": 1.1066194772720337, "train/loss/anomaly": 0.6850113272666931}
+{"step": 4, "timestamp": "2026-09-13T23:40:46.631574", "train/loss/total": 2.334531307220459, "train/loss/rul": 0.5500590801239014, "train/loss/fault": 1.082649827003479, "train/loss/anomaly": 0.7018222808837891}
+{"step": 0, "timestamp": "2026-09-13T23:40:46.720864", "val/loss/total": 2.24526584148407}
+{"step": 5, "timestamp": "2026-09-13T23:40:46.966895", "train/loss/total": 2.5522549152374268, "train/loss/rul": 0.6471586227416992, "train/loss/fault": 1.2109609842300415, "train/loss/anomaly": 0.6941352486610413}
+{"step": 6, "timestamp": "2026-09-13T23:40:47.179563", "train/loss/total": 2.539484739303589, "train/loss/rul": 0.6861282587051392, "train/loss/fault": 1.1682554483413696, "train/loss/anomaly": 0.6851010918617249}
+{"step": 7, "timestamp": "2026-09-13T23:40:47.379376", "train/loss/total": 2.348132848739624, "train/loss/rul": 0.5338606834411621, "train/loss/fault": 1.1200085878372192, "train/loss/anomaly": 0.6942635774612427}
+{"step": 8, "timestamp": "2026-09-13T23:40:47.592146", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:40:47.819719", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:40:47.905758", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:40:48.124455", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:40:48.373445", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:40:48.590126", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:40:48.856739", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:40:49.097729", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:40:49.199705", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:40:49.394360", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:40:49.599251", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:40:49.814800", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:40:50.079458", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:40:50.325556", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:40:50.426090", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:40:50.615503", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:40:50.805548", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:40:50.997251", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:40:51.204872", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:40:51.458824", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:40:51.546555", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:40:51.784499", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 26, "timestamp": "2026-09-13T23:40:51.972569", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 27, "timestamp": "2026-09-13T23:40:52.203980", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 28, "timestamp": "2026-09-13T23:40:52.461957", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:40:52.657749", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:40:52.734283", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:40:52.922608", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:40:53.103510", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:40:53.283636", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:40:53.458912", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:40:53.656461", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:40:53.731619", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:40:53.911629", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:40:54.092732", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:40:54.343602", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:40:54.577927", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:40:54.792282", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:40:54.867824", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:40:55.084733", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:40:55.318066", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:40:55.503126", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:40:55.737300", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:40:55.966409", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:40:56.081639", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:40:56.285028", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:40:56.501467", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:40:56.720492", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:40:56.922504", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:40:57.103674", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:40:57.203643", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:40:57.427277", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:40:57.626953", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:40:57.849736", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:40:58.085769", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:40:58.278544", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:40:58.353203", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:40:58.535254", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:40:58.782542", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:40:59.037506", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:40:59.231793", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:40:59.434547", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:40:59.505074", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:40:59.729445", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:40:59.938068", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:41:00.188403", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:41:00.385646", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:41:00.589480", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:41:00.689979", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:41:00.908397", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:41:01.134672", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:41:01.330386", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:41:01.554553", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:41:01.781128", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:41:01.870540", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:41:02.088805", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:41:02.325271", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:41:02.595094", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:41:02.864968", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:41:02.964505", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:41:03.007701", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:41:03.112309", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:41:03.223358", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:41:03.322056", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:41:03.489101", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:41:03.719018", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:41:03.810616", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:41:04.032064", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:41:04.251904", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:41:04.470855", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:41:04.703072", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:41:04.917718", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:41:05.000015", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:41:05.231278", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:41:05.448448", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:41:05.665955", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:41:05.860602", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:41:06.101808", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:41:06.186949", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:41:06.440374", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:41:06.690144", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:41:06.934433", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:41:07.158361", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:41:07.493232", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:41:07.685057", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:41:08.146664", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:41:08.449583", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:41:08.676612", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:41:08.904818", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:41:09.110482", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:41:09.205670", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:41:58.927734", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:41:59.143370", "train/loss/total": 2.4285969734191895, "train/loss/rul": 0.6181516647338867, "train/loss/fault": 1.1163042783737183, "train/loss/anomaly": 0.6941410899162292}
+{"step": 2, "timestamp": "2026-09-13T23:41:59.366148", "train/loss/total": 2.3364877700805664, "train/loss/rul": 0.4985061287879944, "train/loss/fault": 1.1415601968765259, "train/loss/anomaly": 0.6964215040206909}
+{"step": 3, "timestamp": "2026-09-13T23:41:59.567854", "train/loss/total": 2.5198721885681152, "train/loss/rul": 0.6589435338973999, "train/loss/fault": 1.1616038084030151, "train/loss/anomaly": 0.6993247866630554}
+{"step": 4, "timestamp": "2026-09-13T23:41:59.799174", "train/loss/total": 2.3077285289764404, "train/loss/rul": 0.5106447339057922, "train/loss/fault": 1.100853681564331, "train/loss/anomaly": 0.6962302327156067}
+{"step": 0, "timestamp": "2026-09-13T23:41:59.890230", "val/loss/total": 2.4910850524902344}
+{"step": 5, "timestamp": "2026-09-13T23:42:00.142547", "train/loss/total": 2.2905852794647217, "train/loss/rul": 0.49441462755203247, "train/loss/fault": 1.1039094924926758, "train/loss/anomaly": 0.6922611594200134}
+{"step": 6, "timestamp": "2026-09-13T23:42:00.369569", "train/loss/total": 2.5265021324157715, "train/loss/rul": 0.732507586479187, "train/loss/fault": 1.1011854410171509, "train/loss/anomaly": 0.6928090453147888}
+{"step": 7, "timestamp": "2026-09-13T23:42:00.579765", "train/loss/total": 2.4828662872314453, "train/loss/rul": 0.6391507983207703, "train/loss/fault": 1.1419904232025146, "train/loss/anomaly": 0.7017251253128052}
+{"step": 8, "timestamp": "2026-09-13T23:42:00.845162", "train/loss/total": 2.428708076477051, "train/loss/rul": 0.6299542188644409, "train/loss/fault": 1.1054904460906982, "train/loss/anomaly": 0.6932633519172668}
+{"step": 9, "timestamp": "2026-09-13T23:42:01.037318", "train/loss/total": 2.3022584915161133, "train/loss/rul": 0.525382936000824, "train/loss/fault": 1.0890192985534668, "train/loss/anomaly": 0.6878562569618225}
+{"step": 1, "timestamp": "2026-09-13T23:42:01.128832", "val/loss/total": 2.4329941272735596}
+{"step": 10, "timestamp": "2026-09-13T23:42:01.443231", "train/loss/total": 2.3591442108154297, "train/loss/rul": 0.5700325965881348, "train/loss/fault": 1.095349669456482, "train/loss/anomaly": 0.6937620639801025}
+{"step": 11, "timestamp": "2026-09-13T23:42:01.670960", "train/loss/total": 2.4952049255371094, "train/loss/rul": 0.6990556716918945, "train/loss/fault": 1.1007375717163086, "train/loss/anomaly": 0.6954115629196167}
+{"step": 12, "timestamp": "2026-09-13T23:42:01.883497", "train/loss/total": 2.2303857803344727, "train/loss/rul": 0.43497660756111145, "train/loss/fault": 1.0951344966888428, "train/loss/anomaly": 0.7002748250961304}
+{"step": 13, "timestamp": "2026-09-13T23:42:02.097832", "train/loss/total": 2.293600082397461, "train/loss/rul": 0.5707272291183472, "train/loss/fault": 1.0342071056365967, "train/loss/anomaly": 0.6886656880378723}
+{"step": 14, "timestamp": "2026-09-13T23:42:02.334081", "train/loss/total": 2.425352096557617, "train/loss/rul": 0.6261914968490601, "train/loss/fault": 1.1038075685501099, "train/loss/anomaly": 0.6953530311584473}
+{"step": 2, "timestamp": "2026-09-13T23:42:02.422531", "val/loss/total": 2.3773207664489746}
+{"step": 15, "timestamp": "2026-09-13T23:42:02.777867", "train/loss/total": 2.449276924133301, "train/loss/rul": 0.6269595623016357, "train/loss/fault": 1.1284466981887817, "train/loss/anomaly": 0.6938706636428833}
+{"step": 16, "timestamp": "2026-09-13T23:42:03.021289", "train/loss/total": 2.4023497104644775, "train/loss/rul": 0.6563730239868164, "train/loss/fault": 1.0497726202011108, "train/loss/anomaly": 0.6962040662765503}
+{"step": 17, "timestamp": "2026-09-13T23:42:03.268685", "train/loss/total": 2.4781596660614014, "train/loss/rul": 0.6444398760795593, "train/loss/fault": 1.1341785192489624, "train/loss/anomaly": 0.6995413899421692}
+{"step": 18, "timestamp": "2026-09-13T23:42:03.489014", "train/loss/total": 2.299785852432251, "train/loss/rul": 0.5719025731086731, "train/loss/fault": 1.035675048828125, "train/loss/anomaly": 0.6922082304954529}
+{"step": 19, "timestamp": "2026-09-13T23:42:03.722830", "train/loss/total": 2.523196220397949, "train/loss/rul": 0.642148494720459, "train/loss/fault": 1.1857751607894897, "train/loss/anomaly": 0.69527268409729}
+{"step": 3, "timestamp": "2026-09-13T23:42:03.823946", "val/loss/total": 2.4716511964797974}
+{"step": 20, "timestamp": "2026-09-13T23:42:04.072587", "train/loss/total": 2.4295763969421387, "train/loss/rul": 0.5878837704658508, "train/loss/fault": 1.1456186771392822, "train/loss/anomaly": 0.6960740685462952}
+{"step": 21, "timestamp": "2026-09-13T23:42:04.298915", "train/loss/total": 2.570629119873047, "train/loss/rul": 0.6991395354270935, "train/loss/fault": 1.176690936088562, "train/loss/anomaly": 0.6947985887527466}
+{"step": 22, "timestamp": "2026-09-13T23:42:04.530135", "train/loss/total": 2.4699816703796387, "train/loss/rul": 0.6511828899383545, "train/loss/fault": 1.1331413984298706, "train/loss/anomaly": 0.685657262802124}
+{"step": 23, "timestamp": "2026-09-13T23:42:04.769712", "train/loss/total": 2.5162720680236816, "train/loss/rul": 0.6522250771522522, "train/loss/fault": 1.1821284294128418, "train/loss/anomaly": 0.6819185018539429}
+{"step": 24, "timestamp": "2026-09-13T23:42:04.990374", "train/loss/total": 2.5018258094787598, "train/loss/rul": 0.6385315656661987, "train/loss/fault": 1.1285099983215332, "train/loss/anomaly": 0.7347843647003174}
+{"step": 4, "timestamp": "2026-09-13T23:42:05.089838", "val/loss/total": 2.524013042449951}
+{"step": 25, "timestamp": "2026-09-13T23:42:05.327052", "train/loss/total": 2.54840087890625, "train/loss/rul": 0.6974385976791382, "train/loss/fault": 1.1494050025939941, "train/loss/anomaly": 0.7015573978424072}
+{"step": 26, "timestamp": "2026-09-13T23:42:05.578317", "train/loss/total": 2.392983913421631, "train/loss/rul": 0.572475254535675, "train/loss/fault": 1.093714952468872, "train/loss/anomaly": 0.7267937064170837}
+{"step": 27, "timestamp": "2026-09-13T23:42:05.850523", "train/loss/total": 2.491426467895508, "train/loss/rul": 0.6318082213401794, "train/loss/fault": 1.1637095212936401, "train/loss/anomaly": 0.6959086656570435}
+{"step": 28, "timestamp": "2026-09-13T23:42:06.114904", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:42:06.343858", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:42:06.432935", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:42:06.657013", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:42:06.911665", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:42:07.131908", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:42:07.362989", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:42:07.627416", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:42:07.734957", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:42:07.955512", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:42:08.160612", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:42:08.409714", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:42:08.614795", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:42:08.793898", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:42:08.868940", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:42:09.044242", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:42:09.264561", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:42:09.465933", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:42:09.663320", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:42:09.882667", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:42:10.024455", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:42:10.298907", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:42:10.540659", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:42:10.727958", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:42:10.993520", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:42:11.261862", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:42:11.370471", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:42:11.629618", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:42:11.894348", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:42:12.169069", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:42:12.427623", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:42:12.694814", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:42:12.789096", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:42:12.997131", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:42:13.185398", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:42:13.362523", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:42:13.530182", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:42:13.719765", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:42:13.802327", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:42:13.982483", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:42:14.181282", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:42:14.423548", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:42:14.695692", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:42:14.949089", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:42:15.037531", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:42:15.229649", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:42:15.426821", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:42:15.603701", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:42:15.789458", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:42:15.980466", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:42:16.071837", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:42:16.270880", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:42:16.463882", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:42:16.645468", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:42:16.820912", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:42:17.011214", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:42:17.084251", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:42:17.295092", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:42:17.523104", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:42:17.751366", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:42:17.947068", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:42:18.153043", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:42:18.230506", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:42:18.434389", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:42:18.638461", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:42:18.874040", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:42:19.144320", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:42:19.378866", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:42:19.472992", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:42:19.704815", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:42:19.936714", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:42:20.121701", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:42:20.370266", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:42:20.662437", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:42:20.772467", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:42:20.937115", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:42:21.042006", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:42:21.146849", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:42:21.252593", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:42:21.353128", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:42:21.426594", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:42:21.662321", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:42:21.896443", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:42:22.172804", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:42:22.409482", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:42:22.629142", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:42:22.732476", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:42:58.291093", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:42:58.505908", "train/loss/total": 2.4285969734191895, "train/loss/rul": 0.6181516647338867, "train/loss/fault": 1.1163042783737183, "train/loss/anomaly": 0.6941410899162292}
+{"step": 2, "timestamp": "2026-09-13T23:42:58.728155", "train/loss/total": 2.3364877700805664, "train/loss/rul": 0.4985061287879944, "train/loss/fault": 1.1415601968765259, "train/loss/anomaly": 0.6964215040206909}
+{"step": 3, "timestamp": "2026-09-13T23:42:58.923402", "train/loss/total": 2.5198721885681152, "train/loss/rul": 0.6589435338973999, "train/loss/fault": 1.1616038084030151, "train/loss/anomaly": 0.6993247866630554}
+{"step": 4, "timestamp": "2026-09-13T23:42:59.118519", "train/loss/total": 2.3077285289764404, "train/loss/rul": 0.5106447339057922, "train/loss/fault": 1.100853681564331, "train/loss/anomaly": 0.6962302327156067}
+{"step": 0, "timestamp": "2026-09-13T23:42:59.212027", "val/loss/total": 2.4910850524902344}
+{"step": 5, "timestamp": "2026-09-13T23:42:59.467736", "train/loss/total": 2.2905852794647217, "train/loss/rul": 0.49441462755203247, "train/loss/fault": 1.1039094924926758, "train/loss/anomaly": 0.6922611594200134}
+{"step": 6, "timestamp": "2026-09-13T23:42:59.667098", "train/loss/total": 2.5265021324157715, "train/loss/rul": 0.732507586479187, "train/loss/fault": 1.1011854410171509, "train/loss/anomaly": 0.6928090453147888}
+{"step": 7, "timestamp": "2026-09-13T23:42:59.904376", "train/loss/total": 2.4828662872314453, "train/loss/rul": 0.6391507983207703, "train/loss/fault": 1.1419904232025146, "train/loss/anomaly": 0.7017251253128052}
+{"step": 8, "timestamp": "2026-09-13T23:43:00.133020", "train/loss/total": 2.428708076477051, "train/loss/rul": 0.6299542188644409, "train/loss/fault": 1.1054904460906982, "train/loss/anomaly": 0.6932633519172668}
+{"step": 9, "timestamp": "2026-09-13T23:43:00.354163", "train/loss/total": 2.3022584915161133, "train/loss/rul": 0.525382936000824, "train/loss/fault": 1.0890192985534668, "train/loss/anomaly": 0.6878562569618225}
+{"step": 1, "timestamp": "2026-09-13T23:43:00.447386", "val/loss/total": 2.4329941272735596}
+{"step": 10, "timestamp": "2026-09-13T23:43:00.708695", "train/loss/total": 2.3591442108154297, "train/loss/rul": 0.5700325965881348, "train/loss/fault": 1.095349669456482, "train/loss/anomaly": 0.6937620639801025}
+{"step": 11, "timestamp": "2026-09-13T23:43:00.916125", "train/loss/total": 2.4952049255371094, "train/loss/rul": 0.6990556716918945, "train/loss/fault": 1.1007375717163086, "train/loss/anomaly": 0.6954115629196167}
+{"step": 12, "timestamp": "2026-09-13T23:43:01.177731", "train/loss/total": 2.2303857803344727, "train/loss/rul": 0.43497660756111145, "train/loss/fault": 1.0951344966888428, "train/loss/anomaly": 0.7002748250961304}
+{"step": 13, "timestamp": "2026-09-13T23:43:01.467748", "train/loss/total": 2.293600082397461, "train/loss/rul": 0.5707272291183472, "train/loss/fault": 1.0342071056365967, "train/loss/anomaly": 0.6886656880378723}
+{"step": 14, "timestamp": "2026-09-13T23:43:01.708331", "train/loss/total": 2.425352096557617, "train/loss/rul": 0.6261914968490601, "train/loss/fault": 1.1038075685501099, "train/loss/anomaly": 0.6953530311584473}
+{"step": 2, "timestamp": "2026-09-13T23:43:01.789193", "val/loss/total": 2.3773207664489746}
+{"step": 15, "timestamp": "2026-09-13T23:43:02.022598", "train/loss/total": 2.449276924133301, "train/loss/rul": 0.6269595623016357, "train/loss/fault": 1.1284466981887817, "train/loss/anomaly": 0.6938706636428833}
+{"step": 16, "timestamp": "2026-09-13T23:43:02.272180", "train/loss/total": 2.4023497104644775, "train/loss/rul": 0.6563730239868164, "train/loss/fault": 1.0497726202011108, "train/loss/anomaly": 0.6962040662765503}
+{"step": 17, "timestamp": "2026-09-13T23:43:02.489893", "train/loss/total": 2.4781596660614014, "train/loss/rul": 0.6444398760795593, "train/loss/fault": 1.1341785192489624, "train/loss/anomaly": 0.6995413899421692}
+{"step": 18, "timestamp": "2026-09-13T23:43:02.711307", "train/loss/total": 2.299785852432251, "train/loss/rul": 0.5719025731086731, "train/loss/fault": 1.035675048828125, "train/loss/anomaly": 0.6922082304954529}
+{"step": 19, "timestamp": "2026-09-13T23:43:02.921092", "train/loss/total": 2.523196220397949, "train/loss/rul": 0.642148494720459, "train/loss/fault": 1.1857751607894897, "train/loss/anomaly": 0.69527268409729}
+{"step": 3, "timestamp": "2026-09-13T23:43:03.007784", "val/loss/total": 2.4716511964797974}
+{"step": 20, "timestamp": "2026-09-13T23:43:03.250725", "train/loss/total": 2.4295763969421387, "train/loss/rul": 0.5878837704658508, "train/loss/fault": 1.1456186771392822, "train/loss/anomaly": 0.6960740685462952}
+{"step": 21, "timestamp": "2026-09-13T23:43:03.510864", "train/loss/total": 2.570629119873047, "train/loss/rul": 0.6991395354270935, "train/loss/fault": 1.176690936088562, "train/loss/anomaly": 0.6947985887527466}
+{"step": 22, "timestamp": "2026-09-13T23:43:03.749623", "train/loss/total": 2.4699816703796387, "train/loss/rul": 0.6511828899383545, "train/loss/fault": 1.1331413984298706, "train/loss/anomaly": 0.685657262802124}
+{"step": 23, "timestamp": "2026-09-13T23:43:03.969337", "train/loss/total": 2.5162720680236816, "train/loss/rul": 0.6522250771522522, "train/loss/fault": 1.1821284294128418, "train/loss/anomaly": 0.6819185018539429}
+{"step": 24, "timestamp": "2026-09-13T23:43:04.175970", "train/loss/total": 2.5018258094787598, "train/loss/rul": 0.6385315656661987, "train/loss/fault": 1.1285099983215332, "train/loss/anomaly": 0.7347843647003174}
+{"step": 4, "timestamp": "2026-09-13T23:43:04.290260", "val/loss/total": 2.524013042449951}
+{"step": 25, "timestamp": "2026-09-13T23:43:04.563875", "train/loss/total": 2.54840087890625, "train/loss/rul": 0.6974385976791382, "train/loss/fault": 1.1494050025939941, "train/loss/anomaly": 0.7015573978424072}
+{"step": 26, "timestamp": "2026-09-13T23:43:04.850477", "train/loss/total": 2.392983913421631, "train/loss/rul": 0.572475254535675, "train/loss/fault": 1.093714952468872, "train/loss/anomaly": 0.7267937064170837}
+{"step": 27, "timestamp": "2026-09-13T23:43:04.968397", "train/loss/total": 2.491426467895508, "train/loss/rul": 0.6318082213401794, "train/loss/fault": 1.1637095212936401, "train/loss/anomaly": 0.6959086656570435}
+{"step": 28, "timestamp": "2026-09-13T23:43:05.069176", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:43:05.174121", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:43:05.221861", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:43:05.325952", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:43:05.467988", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:43:05.714106", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:43:05.945953", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:43:06.198913", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:43:06.293155", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:43:06.526984", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:43:06.780974", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:43:07.031458", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:43:07.264180", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:43:07.490184", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:43:07.598258", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:43:07.829593", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:43:08.033136", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:43:08.338647", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:43:08.598097", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:43:08.870446", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:43:08.996444", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:43:09.285809", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:43:09.550773", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:43:09.855680", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:43:10.200180", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:43:10.548346", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:43:10.704702", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:43:11.045781", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:43:11.312173", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:43:11.586474", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:43:11.832737", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:43:12.067604", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:43:12.176136", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:43:12.445052", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:43:12.697405", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:43:12.923853", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:43:13.137731", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:43:13.361557", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:43:13.458066", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:43:13.686374", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:43:13.930399", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:43:14.168393", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:43:14.380268", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:43:14.651470", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:43:14.761224", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:43:15.012359", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:43:15.270342", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:43:15.502822", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:43:15.755465", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:43:15.976321", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:43:16.049087", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:43:16.240127", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:43:16.447948", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:43:16.702379", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:43:16.943061", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:43:17.160421", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:43:17.255616", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:43:17.476952", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:43:17.713892", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:43:17.921592", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:43:18.123170", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:43:18.285651", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:43:18.355653", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:43:18.532605", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:43:18.701962", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:43:18.876162", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:43:19.094556", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:43:19.310714", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:43:19.415894", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:43:19.635269", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:43:19.842031", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:43:20.076628", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:43:20.324341", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:43:20.524919", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:43:20.623711", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:43:20.828633", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:43:21.041608", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:43:21.265671", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:43:21.521756", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:43:21.776971", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:43:21.862502", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:43:22.109910", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:43:22.343054", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:43:22.608996", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:43:22.837996", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:43:23.089512", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:43:23.192477", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:43:52.496832", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:43:52.725133", "train/loss/total": 2.4285969734191895, "train/loss/rul": 0.6181516647338867, "train/loss/fault": 1.1163042783737183, "train/loss/anomaly": 0.6941410899162292}
+{"step": 2, "timestamp": "2026-09-13T23:43:52.963014", "train/loss/total": 2.3364877700805664, "train/loss/rul": 0.4985061287879944, "train/loss/fault": 1.1415601968765259, "train/loss/anomaly": 0.6964215040206909}
+{"step": 3, "timestamp": "2026-09-13T23:43:53.163341", "train/loss/total": 2.5198721885681152, "train/loss/rul": 0.6589435338973999, "train/loss/fault": 1.1616038084030151, "train/loss/anomaly": 0.6993247866630554}
+{"step": 4, "timestamp": "2026-09-13T23:43:53.357316", "train/loss/total": 2.3077285289764404, "train/loss/rul": 0.5106447339057922, "train/loss/fault": 1.100853681564331, "train/loss/anomaly": 0.6962302327156067}
+{"step": 0, "timestamp": "2026-09-13T23:43:53.440000", "val/loss/total": 2.4910850524902344}
+{"step": 5, "timestamp": "2026-09-13T23:43:53.670601", "train/loss/total": 2.2905852794647217, "train/loss/rul": 0.49441462755203247, "train/loss/fault": 1.1039094924926758, "train/loss/anomaly": 0.6922611594200134}
+{"step": 6, "timestamp": "2026-09-13T23:43:53.900701", "train/loss/total": 2.5265021324157715, "train/loss/rul": 0.732507586479187, "train/loss/fault": 1.1011854410171509, "train/loss/anomaly": 0.6928090453147888}
+{"step": 7, "timestamp": "2026-09-13T23:43:54.123216", "train/loss/total": 2.4828662872314453, "train/loss/rul": 0.6391507983207703, "train/loss/fault": 1.1419904232025146, "train/loss/anomaly": 0.7017251253128052}
+{"step": 8, "timestamp": "2026-09-13T23:43:54.338607", "train/loss/total": 2.428708076477051, "train/loss/rul": 0.6299542188644409, "train/loss/fault": 1.1054904460906982, "train/loss/anomaly": 0.6932633519172668}
+{"step": 9, "timestamp": "2026-09-13T23:43:54.567247", "train/loss/total": 2.3022584915161133, "train/loss/rul": 0.525382936000824, "train/loss/fault": 1.0890192985534668, "train/loss/anomaly": 0.6878562569618225}
+{"step": 1, "timestamp": "2026-09-13T23:43:54.670622", "val/loss/total": 2.4329941272735596}
+{"step": 10, "timestamp": "2026-09-13T23:43:54.892689", "train/loss/total": 2.3591442108154297, "train/loss/rul": 0.5700325965881348, "train/loss/fault": 1.095349669456482, "train/loss/anomaly": 0.6937620639801025}
+{"step": 11, "timestamp": "2026-09-13T23:43:55.136014", "train/loss/total": 2.4952049255371094, "train/loss/rul": 0.6990556716918945, "train/loss/fault": 1.1007375717163086, "train/loss/anomaly": 0.6954115629196167}
+{"step": 12, "timestamp": "2026-09-13T23:43:55.409747", "train/loss/total": 2.2303857803344727, "train/loss/rul": 0.43497660756111145, "train/loss/fault": 1.0951344966888428, "train/loss/anomaly": 0.7002748250961304}
+{"step": 13, "timestamp": "2026-09-13T23:43:55.644996", "train/loss/total": 2.293600082397461, "train/loss/rul": 0.5707272291183472, "train/loss/fault": 1.0342071056365967, "train/loss/anomaly": 0.6886656880378723}
+{"step": 14, "timestamp": "2026-09-13T23:43:55.847993", "train/loss/total": 2.425352096557617, "train/loss/rul": 0.6261914968490601, "train/loss/fault": 1.1038075685501099, "train/loss/anomaly": 0.6953530311584473}
+{"step": 2, "timestamp": "2026-09-13T23:43:55.932662", "val/loss/total": 2.3773207664489746}
+{"step": 15, "timestamp": "2026-09-13T23:43:56.165600", "train/loss/total": 2.449276924133301, "train/loss/rul": 0.6269595623016357, "train/loss/fault": 1.1284466981887817, "train/loss/anomaly": 0.6938706636428833}
+{"step": 16, "timestamp": "2026-09-13T23:43:56.364503", "train/loss/total": 2.4023497104644775, "train/loss/rul": 0.6563730239868164, "train/loss/fault": 1.0497726202011108, "train/loss/anomaly": 0.6962040662765503}
+{"step": 17, "timestamp": "2026-09-13T23:43:56.571173", "train/loss/total": 2.4781596660614014, "train/loss/rul": 0.6444398760795593, "train/loss/fault": 1.1341785192489624, "train/loss/anomaly": 0.6995413899421692}
+{"step": 18, "timestamp": "2026-09-13T23:43:56.786559", "train/loss/total": 2.299785852432251, "train/loss/rul": 0.5719025731086731, "train/loss/fault": 1.035675048828125, "train/loss/anomaly": 0.6922082304954529}
+{"step": 19, "timestamp": "2026-09-13T23:43:57.065489", "train/loss/total": 2.523196220397949, "train/loss/rul": 0.642148494720459, "train/loss/fault": 1.1857751607894897, "train/loss/anomaly": 0.69527268409729}
+{"step": 3, "timestamp": "2026-09-13T23:43:57.174850", "val/loss/total": 2.4716511964797974}
+{"step": 20, "timestamp": "2026-09-13T23:43:57.416620", "train/loss/total": 2.4295763969421387, "train/loss/rul": 0.5878837704658508, "train/loss/fault": 1.1456186771392822, "train/loss/anomaly": 0.6960740685462952}
+{"step": 21, "timestamp": "2026-09-13T23:43:57.661830", "train/loss/total": 2.570629119873047, "train/loss/rul": 0.6991395354270935, "train/loss/fault": 1.176690936088562, "train/loss/anomaly": 0.6947985887527466}
+{"step": 22, "timestamp": "2026-09-13T23:43:57.902440", "train/loss/total": 2.4699816703796387, "train/loss/rul": 0.6511828899383545, "train/loss/fault": 1.1331413984298706, "train/loss/anomaly": 0.685657262802124}
+{"step": 23, "timestamp": "2026-09-13T23:43:58.127271", "train/loss/total": 2.5162720680236816, "train/loss/rul": 0.6522250771522522, "train/loss/fault": 1.1821284294128418, "train/loss/anomaly": 0.6819185018539429}
+{"step": 24, "timestamp": "2026-09-13T23:43:58.341877", "train/loss/total": 2.5018258094787598, "train/loss/rul": 0.6385315656661987, "train/loss/fault": 1.1285099983215332, "train/loss/anomaly": 0.7347843647003174}
+{"step": 4, "timestamp": "2026-09-13T23:43:58.451902", "val/loss/total": 2.524013042449951}
+{"step": 25, "timestamp": "2026-09-13T23:43:58.720891", "train/loss/total": 2.54840087890625, "train/loss/rul": 0.6974385976791382, "train/loss/fault": 1.1494050025939941, "train/loss/anomaly": 0.7015573978424072}
+{"step": 26, "timestamp": "2026-09-13T23:43:58.971379", "train/loss/total": 2.392983913421631, "train/loss/rul": 0.572475254535675, "train/loss/fault": 1.093714952468872, "train/loss/anomaly": 0.7267937064170837}
+{"step": 27, "timestamp": "2026-09-13T23:43:59.185108", "train/loss/total": 2.491426467895508, "train/loss/rul": 0.6318082213401794, "train/loss/fault": 1.1637095212936401, "train/loss/anomaly": 0.6959086656570435}
+{"step": 28, "timestamp": "2026-09-13T23:43:59.393497", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:43:59.603051", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:43:59.744569", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:43:59.950195", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:44:00.209125", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:44:00.433569", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:44:00.681922", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:44:00.917343", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:44:01.027513", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:44:01.226038", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:44:01.490245", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:44:01.732766", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:44:01.929055", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:44:02.097532", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:44:02.169046", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:44:02.367189", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:44:02.562116", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:44:02.756124", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:44:02.969343", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:44:03.171325", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:44:03.269522", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:44:03.512953", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:44:03.708653", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:44:03.903665", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:44:04.116407", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:44:04.318338", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:44:04.402515", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:44:04.584840", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:44:04.784706", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:44:04.967073", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:44:05.145679", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:44:05.326350", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:44:05.402357", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:44:05.577394", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:44:05.791935", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:44:06.074121", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:44:06.377238", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:44:06.571700", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:44:06.653227", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:44:06.825477", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:44:06.923629", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:44:07.027340", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:44:07.132383", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:44:07.229246", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:44:07.269463", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:44:07.442342", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:44:07.641069", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:44:07.844208", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:44:08.096862", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:44:08.319087", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:44:08.433342", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:44:08.657706", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:44:08.858956", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:44:09.079105", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:44:09.295481", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:44:09.519173", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:44:09.598932", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:44:09.779520", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:44:10.011471", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:44:10.260593", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:44:10.536595", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:44:10.791156", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:44:10.873505", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:44:11.096674", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:44:11.322479", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:44:11.521393", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:44:11.716225", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:44:11.941868", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:44:12.036053", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:44:12.257810", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:44:12.492293", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:44:12.728491", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:44:12.932585", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:44:13.185327", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:44:13.280389", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:44:13.507368", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:44:13.699628", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:44:13.897863", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:44:14.134251", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:44:14.408742", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:44:14.508276", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:44:14.781167", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:44:14.989988", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:44:15.235955", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:44:15.482176", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:44:15.664680", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:44:15.740208", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:44:49.610156", "train/loss/total": 2.578115224838257, "train/loss/rul": 0.800682783126831, "train/loss/fault": 1.0946835279464722, "train/loss/anomaly": 0.6827489137649536}
+{"step": 1, "timestamp": "2026-09-13T23:44:49.816426", "train/loss/total": 2.803792953491211, "train/loss/rul": 1.0368585586547852, "train/loss/fault": 1.0744673013687134, "train/loss/anomaly": 0.6924671530723572}
+{"step": 2, "timestamp": "2026-09-13T23:44:50.019727", "train/loss/total": 2.4835851192474365, "train/loss/rul": 0.6136947870254517, "train/loss/fault": 1.180792212486267, "train/loss/anomaly": 0.6890981197357178}
+{"step": 3, "timestamp": "2026-09-13T23:44:50.269892", "train/loss/total": 2.3156845569610596, "train/loss/rul": 0.5064246654510498, "train/loss/fault": 1.119686484336853, "train/loss/anomaly": 0.6895734667778015}
+{"step": 4, "timestamp": "2026-09-13T23:44:50.540659", "train/loss/total": 2.4060373306274414, "train/loss/rul": 0.6206895709037781, "train/loss/fault": 1.0894732475280762, "train/loss/anomaly": 0.6958745718002319}
+{"step": 0, "timestamp": "2026-09-13T23:44:50.641248", "val/loss/total": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:44:50.898726", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:44:51.130121", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:44:51.360116", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:44:51.576224", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:44:51.803608", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:44:51.912667", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:44:52.168058", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:44:52.423925", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:44:52.672277", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:44:52.908094", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:44:53.150544", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:44:53.261284", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:44:53.480345", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:44:53.684983", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:44:53.883458", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:44:54.096412", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:44:54.308688", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:44:54.392680", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:44:54.600425", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:44:54.886889", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:44:55.142133", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:44:55.429552", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:44:55.724096", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:44:55.807108", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:44:56.031405", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 26, "timestamp": "2026-09-13T23:44:56.280946", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 27, "timestamp": "2026-09-13T23:44:56.540728", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 28, "timestamp": "2026-09-13T23:44:56.785505", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:44:56.992204", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:44:57.098512", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:44:57.350285", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:44:57.594907", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:44:57.814285", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:44:58.027648", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:44:58.247778", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:44:58.344018", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:44:58.603734", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:44:58.809801", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:44:59.037393", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:44:59.308015", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:44:59.595115", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:44:59.685033", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:44:59.882128", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:45:00.131539", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:45:00.397424", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:45:00.611032", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:45:00.856565", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:45:00.951420", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:45:01.210694", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:45:01.434792", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:45:01.670658", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:45:01.915971", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:45:02.155105", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:45:02.234141", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:45:02.453655", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:45:02.671758", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:45:02.885894", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:45:03.123104", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:45:03.352911", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:45:03.447427", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:45:03.713080", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:45:03.968970", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:45:04.194375", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:45:04.457509", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:45:04.665234", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:45:04.753823", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:45:04.960105", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:45:05.167825", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:45:05.358814", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:45:05.580320", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:45:05.822644", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:45:05.939419", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:45:06.187491", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:45:06.406004", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:45:06.677310", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:45:06.888745", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:45:06.990287", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:45:07.036127", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:45:07.143072", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:45:07.256195", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:45:07.356481", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:45:07.543666", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:45:07.735837", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:45:07.817116", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:45:08.024998", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:45:08.315825", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:45:08.582012", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:45:08.839365", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:45:09.086084", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:45:09.174810", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:45:09.381607", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:45:09.577861", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:45:09.802188", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:45:10.004783", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:45:10.250778", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:45:10.327311", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:45:10.541440", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:45:10.762666", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:45:10.985987", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:45:11.228249", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:45:11.447215", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:45:11.532311", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:45:11.757220", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:45:11.976843", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:45:12.171244", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:45:12.358476", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:45:12.564400", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:45:12.663556", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:45:12.915060", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:45:13.199183", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:45:13.461052", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:45:13.681777", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:45:13.898373", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:45:13.971545", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:45:45.429041", "train/loss/total": 2.578115224838257, "train/loss/rul": 0.800682783126831, "train/loss/fault": 1.0946835279464722, "train/loss/anomaly": 0.6827489137649536}
+{"step": 1, "timestamp": "2026-09-13T23:45:45.717037", "train/loss/total": 2.5699820518493652, "train/loss/rul": 0.7953445315361023, "train/loss/fault": 1.0829005241394043, "train/loss/anomaly": 0.6917368769645691}
+{"step": 2, "timestamp": "2026-09-13T23:45:45.989568", "train/loss/total": 2.4958276748657227, "train/loss/rul": 0.6307039260864258, "train/loss/fault": 1.1687678098678589, "train/loss/anomaly": 0.6963558793067932}
+{"step": 3, "timestamp": "2026-09-13T23:45:46.241005", "train/loss/total": 2.2736659049987793, "train/loss/rul": 0.42761844396591187, "train/loss/fault": 1.1370606422424316, "train/loss/anomaly": 0.7089866995811462}
+{"step": 4, "timestamp": "2026-09-13T23:45:46.504617", "train/loss/total": 2.4755160808563232, "train/loss/rul": 0.7251685857772827, "train/loss/fault": 1.0547518730163574, "train/loss/anomaly": 0.6955956816673279}
+{"step": 0, "timestamp": "2026-09-13T23:45:46.629104", "val/loss/total": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:45:46.827815", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:45:47.020914", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:45:47.234054", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:45:47.469287", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:45:47.686072", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 1, "timestamp": "2026-09-13T23:45:47.811786", "val/loss/total": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:45:48.026837", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:45:48.284002", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:45:48.534204", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:45:48.791125", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:45:49.021217", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 2, "timestamp": "2026-09-13T23:45:49.112229", "val/loss/total": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:45:49.330203", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:45:49.578685", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:45:49.812476", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:45:50.033007", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:45:50.259873", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 3, "timestamp": "2026-09-13T23:45:50.367419", "val/loss/total": NaN}
+{"step": 20, "timestamp": "2026-09-13T23:45:50.570394", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 21, "timestamp": "2026-09-13T23:45:50.783012", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 22, "timestamp": "2026-09-13T23:45:51.013718", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 23, "timestamp": "2026-09-13T23:45:51.263923", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 24, "timestamp": "2026-09-13T23:45:51.482315", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 4, "timestamp": "2026-09-13T23:45:51.565575", "val/loss/total": NaN}
+{"step": 25, "timestamp": "2026-09-13T23:45:51.800435", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 26, "timestamp": "2026-09-13T23:45:52.048676", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 27, "timestamp": "2026-09-13T23:45:52.293585", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 28, "timestamp": "2026-09-13T23:45:52.552473", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:45:52.840074", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:45:52.955255", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:45:53.236303", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:45:53.477020", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:45:53.728535", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:45:53.924228", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:45:54.157233", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:45:54.243476", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:45:54.446215", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:45:54.654070", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:45:54.840898", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:45:55.053233", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:45:55.228307", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:45:55.301997", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:45:55.484431", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:45:55.650837", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:45:55.822611", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:45:56.005833", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:45:56.211464", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:45:56.298658", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:45:56.532131", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:45:56.709446", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:45:56.927613", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:45:57.134879", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:45:57.373413", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:45:57.474282", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:45:57.704273", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:45:57.928771", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:45:58.142086", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:45:58.333106", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:45:58.520237", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:45:58.612506", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:45:58.836808", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:45:59.040821", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:45:59.246693", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:45:59.413825", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:45:59.601470", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:45:59.676571", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:45:59.849778", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:46:00.059824", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:46:00.313181", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:46:00.528909", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:46:00.744564", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:46:00.841020", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:46:01.039630", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:46:01.225173", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:46:01.469118", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:46:01.743740", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:46:01.923216", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:46:01.964626", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:46:02.064154", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:46:02.166526", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:46:02.268383", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:46:02.366390", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:46:02.521656", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:46:02.604143", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:46:02.832731", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:46:03.061604", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:46:03.291595", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:46:03.521226", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:46:03.735070", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:46:03.825378", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:46:04.042758", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:46:04.257754", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:46:04.501051", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:46:04.729434", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:46:04.946502", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:46:05.039103", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:46:05.265194", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:46:05.495501", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:46:05.693521", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:46:05.924085", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:46:06.120295", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:46:06.212568", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:46:06.407398", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:46:06.636360", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:46:06.877653", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:46:07.081055", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:46:07.283241", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:46:07.364250", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:46:07.561413", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:46:07.827749", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:46:08.036604", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:46:08.236904", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:46:08.452947", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:46:08.572935", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:47:13.470803", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:47:13.718442", "train/loss/total": 2.6078460216522217, "train/loss/rul": 0.7696146965026855, "train/loss/fault": 1.1480557918548584, "train/loss/anomaly": 0.690175473690033}
+{"step": 2, "timestamp": "2026-09-13T23:47:13.940470", "train/loss/total": 2.4384255409240723, "train/loss/rul": 0.6776434183120728, "train/loss/fault": 1.0569884777069092, "train/loss/anomaly": 0.7037937045097351}
+{"step": 3, "timestamp": "2026-09-13T23:47:14.169845", "train/loss/total": 2.8750014305114746, "train/loss/rul": 0.9733173847198486, "train/loss/fault": 1.1623848676681519, "train/loss/anomaly": 0.7392991781234741}
+{"step": 4, "timestamp": "2026-09-13T23:47:14.373336", "train/loss/total": 2.500943660736084, "train/loss/rul": 0.6912431716918945, "train/loss/fault": 1.1136866807937622, "train/loss/anomaly": 0.6960138082504272}
+{"step": 0, "timestamp": "2026-09-13T23:47:14.475030", "val/loss/total": 2.8091448545455933}
+{"step": 5, "timestamp": "2026-09-13T23:47:14.721165", "train/loss/total": 2.3950436115264893, "train/loss/rul": 0.5421580076217651, "train/loss/fault": 1.1223169565200806, "train/loss/anomaly": 0.7305687069892883}
+{"step": 6, "timestamp": "2026-09-13T23:47:14.912692", "train/loss/total": 2.825688362121582, "train/loss/rul": 1.0164228677749634, "train/loss/fault": 1.1082161664962769, "train/loss/anomaly": 0.7010493874549866}
+{"step": 7, "timestamp": "2026-09-13T23:47:15.117104", "train/loss/total": 2.656418561935425, "train/loss/rul": 0.8486243486404419, "train/loss/fault": 1.1007922887802124, "train/loss/anomaly": 0.7070019841194153}
+{"step": 8, "timestamp": "2026-09-13T23:47:15.344361", "train/loss/total": 2.608250856399536, "train/loss/rul": 0.8293183445930481, "train/loss/fault": 1.0776147842407227, "train/loss/anomaly": 0.7013177275657654}
+{"step": 9, "timestamp": "2026-09-13T23:47:15.553435", "train/loss/total": 2.4002881050109863, "train/loss/rul": 0.562442421913147, "train/loss/fault": 1.1343464851379395, "train/loss/anomaly": 0.7034990787506104}
+{"step": 1, "timestamp": "2026-09-13T23:47:15.634639", "val/loss/total": 2.6649281978607178}
+{"step": 10, "timestamp": "2026-09-13T23:47:15.897640", "train/loss/total": 2.468702793121338, "train/loss/rul": 0.6450043320655823, "train/loss/fault": 1.1201303005218506, "train/loss/anomaly": 0.7035682201385498}
+{"step": 11, "timestamp": "2026-09-13T23:47:16.139190", "train/loss/total": 2.614224910736084, "train/loss/rul": 0.8160192370414734, "train/loss/fault": 1.0935285091400146, "train/loss/anomaly": 0.704677164554596}
+{"step": 12, "timestamp": "2026-09-13T23:47:16.377550", "train/loss/total": 2.2662668228149414, "train/loss/rul": 0.5153685212135315, "train/loss/fault": 1.0545759201049805, "train/loss/anomaly": 0.6963224411010742}
+{"step": 13, "timestamp": "2026-09-13T23:47:16.600095", "train/loss/total": 2.566648006439209, "train/loss/rul": 0.7700574398040771, "train/loss/fault": 1.105454921722412, "train/loss/anomaly": 0.6911357045173645}
+{"step": 14, "timestamp": "2026-09-13T23:47:16.815630", "train/loss/total": 2.7601969242095947, "train/loss/rul": 0.8460528254508972, "train/loss/fault": 1.185704231262207, "train/loss/anomaly": 0.7284397482872009}
+{"step": 2, "timestamp": "2026-09-13T23:47:16.923171", "val/loss/total": 2.4717118740081787}
+{"step": 15, "timestamp": "2026-09-13T23:47:17.213081", "train/loss/total": 2.5507428646087646, "train/loss/rul": 0.7105500102043152, "train/loss/fault": 1.1108258962631226, "train/loss/anomaly": 0.7293670177459717}
+{"step": 16, "timestamp": "2026-09-13T23:47:17.444129", "train/loss/total": 2.570186138153076, "train/loss/rul": 0.7733482122421265, "train/loss/fault": 1.09506356716156, "train/loss/anomaly": 0.7017743587493896}
+{"step": 17, "timestamp": "2026-09-13T23:47:17.704164", "train/loss/total": 2.683762550354004, "train/loss/rul": 0.8718270659446716, "train/loss/fault": 1.097719430923462, "train/loss/anomaly": 0.714215874671936}
+{"step": 18, "timestamp": "2026-09-13T23:47:17.944237", "train/loss/total": 2.389458417892456, "train/loss/rul": 0.6434189081192017, "train/loss/fault": 1.0463167428970337, "train/loss/anomaly": 0.6997228264808655}
+{"step": 19, "timestamp": "2026-09-13T23:47:18.180490", "train/loss/total": 2.527923583984375, "train/loss/rul": 0.7861294746398926, "train/loss/fault": 1.0636439323425293, "train/loss/anomaly": 0.6781502366065979}
+{"step": 3, "timestamp": "2026-09-13T23:47:18.285118", "val/loss/total": 2.481343388557434}
+{"step": 20, "timestamp": "2026-09-13T23:47:18.498084", "train/loss/total": 2.3119804859161377, "train/loss/rul": 0.5208419561386108, "train/loss/fault": 1.1053200960159302, "train/loss/anomaly": 0.6858184337615967}
+{"step": 21, "timestamp": "2026-09-13T23:47:18.747285", "train/loss/total": 2.5248947143554688, "train/loss/rul": 0.7311882972717285, "train/loss/fault": 1.1075977087020874, "train/loss/anomaly": 0.6861088275909424}
+{"step": 22, "timestamp": "2026-09-13T23:47:18.961743", "train/loss/total": 2.550593137741089, "train/loss/rul": 0.7532739639282227, "train/loss/fault": 1.1127121448516846, "train/loss/anomaly": 0.6846070289611816}
+{"step": 23, "timestamp": "2026-09-13T23:47:19.181085", "train/loss/total": 2.5680432319641113, "train/loss/rul": 0.7307739853858948, "train/loss/fault": 1.1281484365463257, "train/loss/anomaly": 0.7091207504272461}
+{"step": 24, "timestamp": "2026-09-13T23:47:19.414942", "train/loss/total": 2.5306859016418457, "train/loss/rul": 0.691650390625, "train/loss/fault": 1.1097511053085327, "train/loss/anomaly": 0.7292843461036682}
+{"step": 4, "timestamp": "2026-09-13T23:47:19.568040", "val/loss/total": 2.6569862365722656}
+{"step": 25, "timestamp": "2026-09-13T23:47:19.779188", "train/loss/total": 2.700967311859131, "train/loss/rul": 0.8610336780548096, "train/loss/fault": 1.1446870565414429, "train/loss/anomaly": 0.6952466368675232}
+{"step": 26, "timestamp": "2026-09-13T23:47:19.965517", "train/loss/total": 2.4437479972839355, "train/loss/rul": 0.6285602450370789, "train/loss/fault": 1.110257625579834, "train/loss/anomaly": 0.7049299478530884}
+{"step": 27, "timestamp": "2026-09-13T23:47:20.171628", "train/loss/total": 2.6058874130249023, "train/loss/rul": 0.7184839248657227, "train/loss/fault": 1.1655020713806152, "train/loss/anomaly": 0.7219012975692749}
+{"step": 28, "timestamp": "2026-09-13T23:47:20.363068", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 29, "timestamp": "2026-09-13T23:47:20.579138", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 5, "timestamp": "2026-09-13T23:47:20.669423", "val/loss/total": NaN}
+{"step": 30, "timestamp": "2026-09-13T23:47:20.879710", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 31, "timestamp": "2026-09-13T23:47:21.093615", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 32, "timestamp": "2026-09-13T23:47:21.325702", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 33, "timestamp": "2026-09-13T23:47:21.520041", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 34, "timestamp": "2026-09-13T23:47:21.745837", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 6, "timestamp": "2026-09-13T23:47:21.833563", "val/loss/total": NaN}
+{"step": 35, "timestamp": "2026-09-13T23:47:22.034657", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 36, "timestamp": "2026-09-13T23:47:22.288099", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 37, "timestamp": "2026-09-13T23:47:22.567874", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 38, "timestamp": "2026-09-13T23:47:22.821823", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 39, "timestamp": "2026-09-13T23:47:23.098927", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 7, "timestamp": "2026-09-13T23:47:23.222906", "val/loss/total": NaN}
+{"step": 40, "timestamp": "2026-09-13T23:47:23.482624", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 41, "timestamp": "2026-09-13T23:47:23.699587", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 42, "timestamp": "2026-09-13T23:47:23.919649", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 43, "timestamp": "2026-09-13T23:47:24.121138", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 44, "timestamp": "2026-09-13T23:47:24.339065", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 8, "timestamp": "2026-09-13T23:47:24.420077", "val/loss/total": NaN}
+{"step": 45, "timestamp": "2026-09-13T23:47:24.589136", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 46, "timestamp": "2026-09-13T23:47:24.783923", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 47, "timestamp": "2026-09-13T23:47:24.962572", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 48, "timestamp": "2026-09-13T23:47:25.135196", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 49, "timestamp": "2026-09-13T23:47:25.331842", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 9, "timestamp": "2026-09-13T23:47:25.408849", "val/loss/total": NaN}
+{"step": 50, "timestamp": "2026-09-13T23:47:25.587005", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 51, "timestamp": "2026-09-13T23:47:25.777269", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 52, "timestamp": "2026-09-13T23:47:25.972330", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 53, "timestamp": "2026-09-13T23:47:26.172571", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 54, "timestamp": "2026-09-13T23:47:26.363718", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 10, "timestamp": "2026-09-13T23:47:26.447767", "val/loss/total": NaN}
+{"step": 55, "timestamp": "2026-09-13T23:47:26.727041", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 56, "timestamp": "2026-09-13T23:47:26.924286", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 57, "timestamp": "2026-09-13T23:47:27.164545", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 58, "timestamp": "2026-09-13T23:47:27.449983", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 59, "timestamp": "2026-09-13T23:47:27.745506", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 11, "timestamp": "2026-09-13T23:47:27.879083", "val/loss/total": NaN}
+{"step": 60, "timestamp": "2026-09-13T23:47:27.987043", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 61, "timestamp": "2026-09-13T23:47:28.094556", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 62, "timestamp": "2026-09-13T23:47:28.193070", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 63, "timestamp": "2026-09-13T23:47:28.292916", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 64, "timestamp": "2026-09-13T23:47:28.390121", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 12, "timestamp": "2026-09-13T23:47:28.471014", "val/loss/total": NaN}
+{"step": 65, "timestamp": "2026-09-13T23:47:28.690291", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 66, "timestamp": "2026-09-13T23:47:28.925222", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 67, "timestamp": "2026-09-13T23:47:29.166613", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 68, "timestamp": "2026-09-13T23:47:29.409243", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 69, "timestamp": "2026-09-13T23:47:29.633383", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 13, "timestamp": "2026-09-13T23:47:29.714991", "val/loss/total": NaN}
+{"step": 70, "timestamp": "2026-09-13T23:47:29.934558", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 71, "timestamp": "2026-09-13T23:47:30.192074", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 72, "timestamp": "2026-09-13T23:47:30.440909", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 73, "timestamp": "2026-09-13T23:47:30.699052", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 74, "timestamp": "2026-09-13T23:47:30.920133", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 14, "timestamp": "2026-09-13T23:47:31.032813", "val/loss/total": NaN}
+{"step": 75, "timestamp": "2026-09-13T23:47:31.321027", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 76, "timestamp": "2026-09-13T23:47:31.575222", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 77, "timestamp": "2026-09-13T23:47:31.801622", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 78, "timestamp": "2026-09-13T23:47:31.994190", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 79, "timestamp": "2026-09-13T23:47:32.224479", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 15, "timestamp": "2026-09-13T23:47:32.305373", "val/loss/total": NaN}
+{"step": 80, "timestamp": "2026-09-13T23:47:32.556882", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 81, "timestamp": "2026-09-13T23:47:32.788722", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 82, "timestamp": "2026-09-13T23:47:33.044090", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 83, "timestamp": "2026-09-13T23:47:33.261528", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 84, "timestamp": "2026-09-13T23:47:33.502930", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 16, "timestamp": "2026-09-13T23:47:33.613092", "val/loss/total": NaN}
+{"step": 85, "timestamp": "2026-09-13T23:47:33.857181", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 86, "timestamp": "2026-09-13T23:47:34.062361", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 87, "timestamp": "2026-09-13T23:47:34.291639", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 88, "timestamp": "2026-09-13T23:47:34.506066", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 89, "timestamp": "2026-09-13T23:47:34.703659", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 17, "timestamp": "2026-09-13T23:47:34.794677", "val/loss/total": NaN}
+{"step": 90, "timestamp": "2026-09-13T23:47:35.032615", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 91, "timestamp": "2026-09-13T23:47:35.235186", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 92, "timestamp": "2026-09-13T23:47:35.459306", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 93, "timestamp": "2026-09-13T23:47:35.761814", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 94, "timestamp": "2026-09-13T23:47:36.053845", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 18, "timestamp": "2026-09-13T23:47:36.184680", "val/loss/total": NaN}
+{"step": 95, "timestamp": "2026-09-13T23:47:36.439536", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 96, "timestamp": "2026-09-13T23:47:36.673935", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 97, "timestamp": "2026-09-13T23:47:36.926085", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 98, "timestamp": "2026-09-13T23:47:37.163039", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 99, "timestamp": "2026-09-13T23:47:37.376246", "train/loss/total": NaN, "train/loss/rul": NaN, "train/loss/fault": NaN, "train/loss/anomaly": NaN}
+{"step": 19, "timestamp": "2026-09-13T23:47:37.462298", "val/loss/total": NaN}
+{"step": 0, "timestamp": "2026-09-13T23:56:48.023895", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:56:48.152944", "train/loss/total": 2.6078460216522217, "train/loss/rul": 0.7696146965026855, "train/loss/fault": 1.1480557918548584, "train/loss/anomaly": 0.690175473690033}
+{"step": 2, "timestamp": "2026-09-13T23:56:48.284878", "train/loss/total": 2.4384255409240723, "train/loss/rul": 0.6776434183120728, "train/loss/fault": 1.0569884777069092, "train/loss/anomaly": 0.7037937045097351}
+{"step": 3, "timestamp": "2026-09-13T23:56:48.414768", "train/loss/total": 2.8750014305114746, "train/loss/rul": 0.9733173847198486, "train/loss/fault": 1.1623848676681519, "train/loss/anomaly": 0.7392991781234741}
+{"step": 4, "timestamp": "2026-09-13T23:56:48.540115", "train/loss/total": 2.500943660736084, "train/loss/rul": 0.6912431716918945, "train/loss/fault": 1.1136866807937622, "train/loss/anomaly": 0.6960138082504272}
+{"step": 0, "timestamp": "2026-09-13T23:56:48.600212", "val/loss/total": 2.8091448545455933}
+{"step": 5, "timestamp": "2026-09-13T23:56:48.748088", "train/loss/total": 2.3950436115264893, "train/loss/rul": 0.5421580076217651, "train/loss/fault": 1.1223169565200806, "train/loss/anomaly": 0.7305687069892883}
+{"step": 6, "timestamp": "2026-09-13T23:56:48.876742", "train/loss/total": 2.825688362121582, "train/loss/rul": 1.0164228677749634, "train/loss/fault": 1.1082161664962769, "train/loss/anomaly": 0.7010493874549866}
+{"step": 7, "timestamp": "2026-09-13T23:56:49.009725", "train/loss/total": 2.656418561935425, "train/loss/rul": 0.8486243486404419, "train/loss/fault": 1.1007922887802124, "train/loss/anomaly": 0.7070019841194153}
+{"step": 8, "timestamp": "2026-09-13T23:56:49.153930", "train/loss/total": 2.608250856399536, "train/loss/rul": 0.8293183445930481, "train/loss/fault": 1.0776147842407227, "train/loss/anomaly": 0.7013177275657654}
+{"step": 9, "timestamp": "2026-09-13T23:56:49.297569", "train/loss/total": 2.4002881050109863, "train/loss/rul": 0.562442421913147, "train/loss/fault": 1.1343464851379395, "train/loss/anomaly": 0.7034990787506104}
+{"step": 1, "timestamp": "2026-09-13T23:56:49.355731", "val/loss/total": 2.6649281978607178}
+{"step": 10, "timestamp": "2026-09-13T23:56:49.503849", "train/loss/total": 2.468702793121338, "train/loss/rul": 0.6450043320655823, "train/loss/fault": 1.1201303005218506, "train/loss/anomaly": 0.7035682201385498}
+{"step": 11, "timestamp": "2026-09-13T23:56:49.649790", "train/loss/total": 2.614224910736084, "train/loss/rul": 0.8160192370414734, "train/loss/fault": 1.0935285091400146, "train/loss/anomaly": 0.704677164554596}
+{"step": 12, "timestamp": "2026-09-13T23:56:49.783750", "train/loss/total": 2.2662668228149414, "train/loss/rul": 0.5153685212135315, "train/loss/fault": 1.0545759201049805, "train/loss/anomaly": 0.6963224411010742}
+{"step": 13, "timestamp": "2026-09-13T23:56:49.915867", "train/loss/total": 2.566648006439209, "train/loss/rul": 0.7700574398040771, "train/loss/fault": 1.105454921722412, "train/loss/anomaly": 0.6911357045173645}
+{"step": 14, "timestamp": "2026-09-13T23:56:50.100840", "train/loss/total": 2.7601969242095947, "train/loss/rul": 0.8460528254508972, "train/loss/fault": 1.185704231262207, "train/loss/anomaly": 0.7284397482872009}
+{"step": 2, "timestamp": "2026-09-13T23:56:50.170385", "val/loss/total": 2.4717118740081787}
+{"step": 15, "timestamp": "2026-09-13T23:56:50.334807", "train/loss/total": 2.5507428646087646, "train/loss/rul": 0.7105500102043152, "train/loss/fault": 1.1108258962631226, "train/loss/anomaly": 0.7293670177459717}
+{"step": 16, "timestamp": "2026-09-13T23:56:50.478517", "train/loss/total": 2.570186138153076, "train/loss/rul": 0.7733482122421265, "train/loss/fault": 1.09506356716156, "train/loss/anomaly": 0.7017743587493896}
+{"step": 17, "timestamp": "2026-09-13T23:56:50.610429", "train/loss/total": 2.683762550354004, "train/loss/rul": 0.8718270659446716, "train/loss/fault": 1.097719430923462, "train/loss/anomaly": 0.714215874671936}
+{"step": 18, "timestamp": "2026-09-13T23:56:50.736889", "train/loss/total": 2.389458417892456, "train/loss/rul": 0.6434189081192017, "train/loss/fault": 1.0463167428970337, "train/loss/anomaly": 0.6997228264808655}
+{"step": 19, "timestamp": "2026-09-13T23:56:50.861603", "train/loss/total": 2.527923583984375, "train/loss/rul": 0.7861294746398926, "train/loss/fault": 1.0636439323425293, "train/loss/anomaly": 0.6781502366065979}
+{"step": 3, "timestamp": "2026-09-13T23:56:50.917508", "val/loss/total": 2.481343388557434}
+{"step": 20, "timestamp": "2026-09-13T23:56:51.049967", "train/loss/total": 2.3119804859161377, "train/loss/rul": 0.5208419561386108, "train/loss/fault": 1.1053200960159302, "train/loss/anomaly": 0.6858184337615967}
+{"step": 21, "timestamp": "2026-09-13T23:56:51.208323", "train/loss/total": 2.5248947143554688, "train/loss/rul": 0.7311882972717285, "train/loss/fault": 1.1075977087020874, "train/loss/anomaly": 0.6861088275909424}
+{"step": 22, "timestamp": "2026-09-13T23:56:51.337503", "train/loss/total": 2.550593137741089, "train/loss/rul": 0.7532739639282227, "train/loss/fault": 1.1127121448516846, "train/loss/anomaly": 0.6846070289611816}
+{"step": 23, "timestamp": "2026-09-13T23:56:51.482731", "train/loss/total": 2.5680432319641113, "train/loss/rul": 0.7307739853858948, "train/loss/fault": 1.1281484365463257, "train/loss/anomaly": 0.7091207504272461}
+{"step": 24, "timestamp": "2026-09-13T23:56:51.644697", "train/loss/total": 2.5306859016418457, "train/loss/rul": 0.691650390625, "train/loss/fault": 1.1097511053085327, "train/loss/anomaly": 0.7292843461036682}
+{"step": 4, "timestamp": "2026-09-13T23:56:51.706877", "val/loss/total": 2.6569862365722656}
+{"step": 25, "timestamp": "2026-09-13T23:56:51.847848", "train/loss/total": 2.700967311859131, "train/loss/rul": 0.8610336780548096, "train/loss/fault": 1.1446870565414429, "train/loss/anomaly": 0.6952466368675232}
+{"step": 26, "timestamp": "2026-09-13T23:56:51.984143", "train/loss/total": 2.4437479972839355, "train/loss/rul": 0.6285602450370789, "train/loss/fault": 1.110257625579834, "train/loss/anomaly": 0.7049299478530884}
+{"step": 27, "timestamp": "2026-09-13T23:56:52.151705", "train/loss/total": 2.6058874130249023, "train/loss/rul": 0.7184839248657227, "train/loss/fault": 1.1655020713806152, "train/loss/anomaly": 0.7219012975692749}
+{"step": 0, "timestamp": "2026-09-13T23:57:46.288851", "train/loss/total": 2.7685818672180176, "train/loss/rul": 0.9476025104522705, "train/loss/fault": 1.1262037754058838, "train/loss/anomaly": 0.6947757005691528}
+{"step": 1, "timestamp": "2026-09-13T23:57:46.431030", "train/loss/total": 2.6078460216522217, "train/loss/rul": 0.7696146965026855, "train/loss/fault": 1.1480557918548584, "train/loss/anomaly": 0.690175473690033}
+{"step": 2, "timestamp": "2026-09-13T23:57:46.564198", "train/loss/total": 2.4384255409240723, "train/loss/rul": 0.6776434183120728, "train/loss/fault": 1.0569884777069092, "train/loss/anomaly": 0.7037937045097351}
+{"step": 3, "timestamp": "2026-09-13T23:57:46.690406", "train/loss/total": 2.8750014305114746, "train/loss/rul": 0.9733173847198486, "train/loss/fault": 1.1623848676681519, "train/loss/anomaly": 0.7392991781234741}
+{"step": 4, "timestamp": "2026-09-13T23:57:46.818388", "train/loss/total": 2.500943660736084, "train/loss/rul": 0.6912431716918945, "train/loss/fault": 1.1136866807937622, "train/loss/anomaly": 0.6960138082504272}
+{"step": 0, "timestamp": "2026-09-13T23:57:46.875395", "val/loss/total": 2.8091448545455933}
+{"step": 5, "timestamp": "2026-09-13T23:57:47.042007", "train/loss/total": 2.3950436115264893, "train/loss/rul": 0.5421580076217651, "train/loss/fault": 1.1223169565200806, "train/loss/anomaly": 0.7305687069892883}
+{"step": 6, "timestamp": "2026-09-13T23:57:47.180028", "train/loss/total": 2.825688362121582, "train/loss/rul": 1.0164228677749634, "train/loss/fault": 1.1082161664962769, "train/loss/anomaly": 0.7010493874549866}
+{"step": 7, "timestamp": "2026-09-13T23:57:47.316228", "train/loss/total": 2.656418561935425, "train/loss/rul": 0.8486243486404419, "train/loss/fault": 1.1007922887802124, "train/loss/anomaly": 0.7070019841194153}
+{"step": 8, "timestamp": "2026-09-13T23:57:47.442374", "train/loss/total": 2.608250856399536, "train/loss/rul": 0.8293183445930481, "train/loss/fault": 1.0776147842407227, "train/loss/anomaly": 0.7013177275657654}
+{"step": 9, "timestamp": "2026-09-13T23:57:47.568925", "train/loss/total": 2.4002881050109863, "train/loss/rul": 0.562442421913147, "train/loss/fault": 1.1343464851379395, "train/loss/anomaly": 0.7034990787506104}
+{"step": 1, "timestamp": "2026-09-13T23:57:47.624259", "val/loss/total": 2.6649281978607178}
+{"step": 10, "timestamp": "2026-09-13T23:57:47.777321", "train/loss/total": 2.468702793121338, "train/loss/rul": 0.6450043320655823, "train/loss/fault": 1.1201303005218506, "train/loss/anomaly": 0.7035682201385498}
+{"step": 11, "timestamp": "2026-09-13T23:57:47.901556", "train/loss/total": 2.614224910736084, "train/loss/rul": 0.8160192370414734, "train/loss/fault": 1.0935285091400146, "train/loss/anomaly": 0.704677164554596}
+{"step": 12, "timestamp": "2026-09-13T23:57:48.028304", "train/loss/total": 2.2662668228149414, "train/loss/rul": 0.5153685212135315, "train/loss/fault": 1.0545759201049805, "train/loss/anomaly": 0.6963224411010742}
+{"step": 13, "timestamp": "2026-09-13T23:57:48.155191", "train/loss/total": 2.566648006439209, "train/loss/rul": 0.7700574398040771, "train/loss/fault": 1.105454921722412, "train/loss/anomaly": 0.6911357045173645}
+{"step": 14, "timestamp": "2026-09-13T23:57:48.282431", "train/loss/total": 2.7601969242095947, "train/loss/rul": 0.8460528254508972, "train/loss/fault": 1.185704231262207, "train/loss/anomaly": 0.7284397482872009}
+{"step": 2, "timestamp": "2026-09-13T23:57:48.343896", "val/loss/total": 2.4717118740081787}
+{"step": 15, "timestamp": "2026-09-13T23:57:48.507780", "train/loss/total": 2.5507428646087646, "train/loss/rul": 0.7105500102043152, "train/loss/fault": 1.1108258962631226, "train/loss/anomaly": 0.7293670177459717}
+{"step": 16, "timestamp": "2026-09-13T23:57:48.634948", "train/loss/total": 2.570186138153076, "train/loss/rul": 0.7733482122421265, "train/loss/fault": 1.09506356716156, "train/loss/anomaly": 0.7017743587493896}
+{"step": 17, "timestamp": "2026-09-13T23:57:48.762673", "train/loss/total": 2.683762550354004, "train/loss/rul": 0.8718270659446716, "train/loss/fault": 1.097719430923462, "train/loss/anomaly": 0.714215874671936}
+{"step": 18, "timestamp": "2026-09-13T23:57:48.913716", "train/loss/total": 2.389458417892456, "train/loss/rul": 0.6434189081192017, "train/loss/fault": 1.0463167428970337, "train/loss/anomaly": 0.6997228264808655}
+{"step": 19, "timestamp": "2026-09-13T23:57:49.069353", "train/loss/total": 2.527923583984375, "train/loss/rul": 0.7861294746398926, "train/loss/fault": 1.0636439323425293, "train/loss/anomaly": 0.6781502366065979}
+{"step": 3, "timestamp": "2026-09-13T23:57:49.124879", "val/loss/total": 2.481343388557434}
+{"step": 20, "timestamp": "2026-09-13T23:57:49.306461", "train/loss/total": 2.3119804859161377, "train/loss/rul": 0.5208419561386108, "train/loss/fault": 1.1053200960159302, "train/loss/anomaly": 0.6858184337615967}
+{"step": 21, "timestamp": "2026-09-13T23:57:49.490996", "train/loss/total": 2.5248947143554688, "train/loss/rul": 0.7311882972717285, "train/loss/fault": 1.1075977087020874, "train/loss/anomaly": 0.6861088275909424}
+{"step": 22, "timestamp": "2026-09-13T23:57:49.665119", "train/loss/total": 2.550593137741089, "train/loss/rul": 0.7532739639282227, "train/loss/fault": 1.1127121448516846, "train/loss/anomaly": 0.6846070289611816}
+{"step": 23, "timestamp": "2026-09-13T23:57:49.821698", "train/loss/total": 2.5680432319641113, "train/loss/rul": 0.7307739853858948, "train/loss/fault": 1.1281484365463257, "train/loss/anomaly": 0.7091207504272461}
+{"step": 24, "timestamp": "2026-09-13T23:57:49.951837", "train/loss/total": 2.5306859016418457, "train/loss/rul": 0.691650390625, "train/loss/fault": 1.1097511053085327, "train/loss/anomaly": 0.7292843461036682}
+{"step": 4, "timestamp": "2026-09-13T23:57:50.013421", "val/loss/total": 2.6569862365722656}
+{"step": 25, "timestamp": "2026-09-13T23:57:50.142246", "train/loss/total": 2.700967311859131, "train/loss/rul": 0.8610336780548096, "train/loss/fault": 1.1446870565414429, "train/loss/anomaly": 0.6952466368675232}
+{"step": 26, "timestamp": "2026-09-13T23:57:50.267189", "train/loss/total": 2.4437479972839355, "train/loss/rul": 0.6285602450370789, "train/loss/fault": 1.110257625579834, "train/loss/anomaly": 0.7049299478530884}
+{"step": 27, "timestamp": "2026-09-13T23:57:50.398125", "train/loss/total": 2.7074108123779297, "train/loss/rul": 0.8244064450263977, "train/loss/fault": 1.1707404851913452, "train/loss/anomaly": 0.7122638821601868}
+{"step": 28, "timestamp": "2026-09-13T23:57:50.526916", "train/loss/total": 2.4948413372039795, "train/loss/rul": 0.6496674418449402, "train/loss/fault": 1.135175347328186, "train/loss/anomaly": 0.7099986672401428}
+{"step": 29, "timestamp": "2026-09-13T23:57:50.654621", "train/loss/total": 2.6340653896331787, "train/loss/rul": 0.8162687420845032, "train/loss/fault": 1.1204193830490112, "train/loss/anomaly": 0.6973772644996643}
+{"step": 5, "timestamp": "2026-09-13T23:57:50.707144", "val/loss/total": 2.362168073654175}
+{"step": 30, "timestamp": "2026-09-13T23:57:50.907393", "train/loss/total": 2.399887800216675, "train/loss/rul": 0.6536323428153992, "train/loss/fault": 1.071770191192627, "train/loss/anomaly": 0.6744851469993591}
+{"step": 31, "timestamp": "2026-09-13T23:57:51.089719", "train/loss/total": 2.3211212158203125, "train/loss/rul": 0.5199010968208313, "train/loss/fault": 1.1029667854309082, "train/loss/anomaly": 0.6982533931732178}
+{"step": 32, "timestamp": "2026-09-13T23:57:51.310475", "train/loss/total": 2.2696304321289062, "train/loss/rul": 0.5213472843170166, "train/loss/fault": 1.0513010025024414, "train/loss/anomaly": 0.6969821453094482}
+{"step": 33, "timestamp": "2026-09-13T23:57:51.530099", "train/loss/total": 2.5326075553894043, "train/loss/rul": 0.6637545228004456, "train/loss/fault": 1.1563884019851685, "train/loss/anomaly": 0.7124646902084351}
+{"step": 34, "timestamp": "2026-09-13T23:57:51.737457", "train/loss/total": 2.5927793979644775, "train/loss/rul": 0.7140978574752808, "train/loss/fault": 1.151867389678955, "train/loss/anomaly": 0.7268142104148865}
+{"step": 6, "timestamp": "2026-09-13T23:57:51.823579", "val/loss/total": 2.3810553550720215}
+{"step": 35, "timestamp": "2026-09-13T23:57:52.043672", "train/loss/total": 2.5011472702026367, "train/loss/rul": 0.6949941515922546, "train/loss/fault": 1.114444375038147, "train/loss/anomaly": 0.6917087435722351}
+{"step": 36, "timestamp": "2026-09-13T23:57:52.188268", "train/loss/total": 2.393627166748047, "train/loss/rul": 0.6400463581085205, "train/loss/fault": 1.066200613975525, "train/loss/anomaly": 0.6873801350593567}
+{"step": 37, "timestamp": "2026-09-13T23:57:52.331869", "train/loss/total": 2.4053850173950195, "train/loss/rul": 0.5956102013587952, "train/loss/fault": 1.1069215536117554, "train/loss/anomaly": 0.7028531432151794}
+{"step": 38, "timestamp": "2026-09-13T23:57:52.501184", "train/loss/total": 2.2862906455993652, "train/loss/rul": 0.46725472807884216, "train/loss/fault": 1.1278272867202759, "train/loss/anomaly": 0.6912084817886353}
+{"step": 39, "timestamp": "2026-09-13T23:57:52.664510", "train/loss/total": 2.448176383972168, "train/loss/rul": 0.6622822284698486, "train/loss/fault": 1.0955778360366821, "train/loss/anomaly": 0.6903163194656372}
+{"step": 7, "timestamp": "2026-09-13T23:57:52.725034", "val/loss/total": 2.396239995956421}
+{"step": 40, "timestamp": "2026-09-13T23:57:52.854667", "train/loss/total": 2.522270679473877, "train/loss/rul": 0.706152081489563, "train/loss/fault": 1.109147071838379, "train/loss/anomaly": 0.7069716453552246}
+{"step": 41, "timestamp": "2026-09-13T23:57:52.989460", "train/loss/total": 2.4546451568603516, "train/loss/rul": 0.6106535196304321, "train/loss/fault": 1.1411837339401245, "train/loss/anomaly": 0.7028079628944397}
+{"step": 42, "timestamp": "2026-09-13T23:57:53.129510", "train/loss/total": 2.5398364067077637, "train/loss/rul": 0.7597795724868774, "train/loss/fault": 1.081278920173645, "train/loss/anomaly": 0.6987777948379517}
+{"step": 43, "timestamp": "2026-09-13T23:57:53.259154", "train/loss/total": 2.6380677223205566, "train/loss/rul": 0.7924840450286865, "train/loss/fault": 1.1575958728790283, "train/loss/anomaly": 0.6879879236221313}
+{"step": 44, "timestamp": "2026-09-13T23:57:53.431924", "train/loss/total": 2.3218798637390137, "train/loss/rul": 0.5228626132011414, "train/loss/fault": 1.0927565097808838, "train/loss/anomaly": 0.706260621547699}
+{"step": 8, "timestamp": "2026-09-13T23:57:53.507027", "val/loss/total": 2.3771328926086426}
+{"step": 45, "timestamp": "2026-09-13T23:57:53.702325", "train/loss/total": 2.572223663330078, "train/loss/rul": 0.7462055087089539, "train/loss/fault": 1.1193690299987793, "train/loss/anomaly": 0.7066491842269897}
+{"step": 46, "timestamp": "2026-09-13T23:57:53.928683", "train/loss/total": 2.5814061164855957, "train/loss/rul": 0.7968142628669739, "train/loss/fault": 1.097681999206543, "train/loss/anomaly": 0.6869099140167236}
+{"step": 47, "timestamp": "2026-09-13T23:57:54.095628", "train/loss/total": 2.496631145477295, "train/loss/rul": 0.6579041481018066, "train/loss/fault": 1.1398078203201294, "train/loss/anomaly": 0.6989192962646484}
+{"step": 48, "timestamp": "2026-09-13T23:57:54.252956", "train/loss/total": 2.3067941665649414, "train/loss/rul": 0.47558316588401794, "train/loss/fault": 1.1417180299758911, "train/loss/anomaly": 0.6894930005073547}
+{"step": 49, "timestamp": "2026-09-13T23:57:54.409549", "train/loss/total": 2.6893553733825684, "train/loss/rul": 0.8735085129737854, "train/loss/fault": 1.1070107221603394, "train/loss/anomaly": 0.7088360786437988}
+{"step": 9, "timestamp": "2026-09-13T23:57:54.475076", "val/loss/total": 2.6857433319091797}
+{"step": 50, "timestamp": "2026-09-13T23:57:54.628632", "train/loss/total": 2.5169429779052734, "train/loss/rul": 0.773974597454071, "train/loss/fault": 1.0322853326797485, "train/loss/anomaly": 0.7106830477714539}
+{"step": 51, "timestamp": "2026-09-13T23:57:54.771450", "train/loss/total": 2.6973767280578613, "train/loss/rul": 0.9090098142623901, "train/loss/fault": 1.1008061170578003, "train/loss/anomaly": 0.6875609159469604}
+{"step": 52, "timestamp": "2026-09-13T23:57:54.921446", "train/loss/total": 2.1469669342041016, "train/loss/rul": 0.35259687900543213, "train/loss/fault": 1.0882031917572021, "train/loss/anomaly": 0.7061669230461121}
+{"step": 53, "timestamp": "2026-09-13T23:57:55.073229", "train/loss/total": 2.468318462371826, "train/loss/rul": 0.6696475148200989, "train/loss/fault": 1.102792739868164, "train/loss/anomaly": 0.6958782076835632}
+{"step": 54, "timestamp": "2026-09-13T23:57:55.224281", "train/loss/total": 2.482348918914795, "train/loss/rul": 0.6636619567871094, "train/loss/fault": 1.118262529373169, "train/loss/anomaly": 0.7004244923591614}
+{"step": 10, "timestamp": "2026-09-13T23:57:55.284022", "val/loss/total": 2.4530779123306274}
+{"step": 55, "timestamp": "2026-09-13T23:57:55.443472", "train/loss/total": 2.532777786254883, "train/loss/rul": 0.708175778388977, "train/loss/fault": 1.1282129287719727, "train/loss/anomaly": 0.6963891983032227}
+{"step": 56, "timestamp": "2026-09-13T23:57:55.578372", "train/loss/total": 2.4687891006469727, "train/loss/rul": 0.6535767912864685, "train/loss/fault": 1.1147642135620117, "train/loss/anomaly": 0.7004480361938477}
+{"step": 57, "timestamp": "2026-09-13T23:57:55.751918", "train/loss/total": 2.2718119621276855, "train/loss/rul": 0.4771043360233307, "train/loss/fault": 1.1015195846557617, "train/loss/anomaly": 0.6931881308555603}
+{"step": 58, "timestamp": "2026-09-13T23:57:55.886552", "train/loss/total": 2.177346706390381, "train/loss/rul": 0.3987041115760803, "train/loss/fault": 1.0817841291427612, "train/loss/anomaly": 0.6968584060668945}
+{"step": 59, "timestamp": "2026-09-13T23:57:56.043836", "train/loss/total": 2.7544896602630615, "train/loss/rul": 0.9467318654060364, "train/loss/fault": 1.1077876091003418, "train/loss/anomaly": 0.6999702453613281}
+{"step": 11, "timestamp": "2026-09-13T23:57:56.108441", "val/loss/total": 2.4526491165161133}
+{"step": 60, "timestamp": "2026-09-13T23:57:56.258303", "train/loss/total": 2.542198657989502, "train/loss/rul": 0.7571365833282471, "train/loss/fault": 1.0958491563796997, "train/loss/anomaly": 0.6892129182815552}
+{"step": 61, "timestamp": "2026-09-13T23:57:56.459466", "train/loss/total": 2.2539491653442383, "train/loss/rul": 0.4397164285182953, "train/loss/fault": 1.1150823831558228, "train/loss/anomaly": 0.6991502046585083}
+{"step": 62, "timestamp": "2026-09-13T23:57:56.670423", "train/loss/total": 2.4049124717712402, "train/loss/rul": 0.5262970924377441, "train/loss/fault": 1.1750589609146118, "train/loss/anomaly": 0.7035565376281738}
+{"step": 63, "timestamp": "2026-09-13T23:57:56.811389", "train/loss/total": 2.657215118408203, "train/loss/rul": 0.8391103744506836, "train/loss/fault": 1.1276715993881226, "train/loss/anomaly": 0.6904332637786865}
+{"step": 64, "timestamp": "2026-09-13T23:57:56.908222", "train/loss/total": 2.4467458724975586, "train/loss/rul": 0.6728531122207642, "train/loss/fault": 1.0694936513900757, "train/loss/anomaly": 0.7043992280960083}
+{"step": 12, "timestamp": "2026-09-13T23:57:56.956064", "val/loss/total": 2.6279001235961914}
+{"step": 65, "timestamp": "2026-09-13T23:57:57.063084", "train/loss/total": 2.585845470428467, "train/loss/rul": 0.8189099431037903, "train/loss/fault": 1.07364022731781, "train/loss/anomaly": 0.6932951807975769}
+{"step": 66, "timestamp": "2026-09-13T23:57:57.171003", "train/loss/total": 2.5025687217712402, "train/loss/rul": 0.6832910776138306, "train/loss/fault": 1.12791109085083, "train/loss/anomaly": 0.69136643409729}
+{"step": 67, "timestamp": "2026-09-13T23:57:57.283459", "train/loss/total": 2.543672561645508, "train/loss/rul": 0.7255904674530029, "train/loss/fault": 1.1171667575836182, "train/loss/anomaly": 0.7009153366088867}
+{"step": 68, "timestamp": "2026-09-13T23:57:57.447473", "train/loss/total": 2.39382004737854, "train/loss/rul": 0.5411555171012878, "train/loss/fault": 1.1417772769927979, "train/loss/anomaly": 0.7108872532844543}
+{"step": 69, "timestamp": "2026-09-13T23:57:57.619299", "train/loss/total": 2.4854583740234375, "train/loss/rul": 0.6874925494194031, "train/loss/fault": 1.11797297000885, "train/loss/anomaly": 0.6799927949905396}
+{"step": 13, "timestamp": "2026-09-13T23:57:57.686022", "val/loss/total": 2.5873111486434937}
+{"step": 70, "timestamp": "2026-09-13T23:57:57.879074", "train/loss/total": 2.3852956295013428, "train/loss/rul": 0.5692808032035828, "train/loss/fault": 1.1232632398605347, "train/loss/anomaly": 0.6927515864372253}
+{"step": 71, "timestamp": "2026-09-13T23:57:58.058021", "train/loss/total": 2.1812822818756104, "train/loss/rul": 0.4348882734775543, "train/loss/fault": 1.0584924221038818, "train/loss/anomaly": 0.6879016160964966}
+{"step": 72, "timestamp": "2026-09-13T23:57:58.240265", "train/loss/total": 2.4932661056518555, "train/loss/rul": 0.6771854162216187, "train/loss/fault": 1.117951512336731, "train/loss/anomaly": 0.6981291770935059}
+{"step": 73, "timestamp": "2026-09-13T23:57:58.426301", "train/loss/total": 2.380690574645996, "train/loss/rul": 0.5688676238059998, "train/loss/fault": 1.1220386028289795, "train/loss/anomaly": 0.6897842884063721}
+{"step": 74, "timestamp": "2026-09-13T23:57:58.644128", "train/loss/total": 2.501272678375244, "train/loss/rul": 0.6983426213264465, "train/loss/fault": 1.099665880203247, "train/loss/anomaly": 0.7032641172409058}
+{"step": 14, "timestamp": "2026-09-13T23:57:58.723496", "val/loss/total": 2.3315030336380005}
+{"step": 75, "timestamp": "2026-09-13T23:57:58.900306", "train/loss/total": 2.4177308082580566, "train/loss/rul": 0.6172861456871033, "train/loss/fault": 1.1138056516647339, "train/loss/anomaly": 0.6866391897201538}
+{"step": 76, "timestamp": "2026-09-13T23:57:59.061063", "train/loss/total": 2.514194965362549, "train/loss/rul": 0.686966598033905, "train/loss/fault": 1.126587152481079, "train/loss/anomaly": 0.7006410956382751}
+{"step": 77, "timestamp": "2026-09-13T23:57:59.231237", "train/loss/total": 2.3453197479248047, "train/loss/rul": 0.5173583030700684, "train/loss/fault": 1.1378552913665771, "train/loss/anomaly": 0.6901061534881592}
+{"step": 78, "timestamp": "2026-09-13T23:57:59.387199", "train/loss/total": 2.4241905212402344, "train/loss/rul": 0.6033622026443481, "train/loss/fault": 1.123419165611267, "train/loss/anomaly": 0.6974092721939087}
+{"step": 79, "timestamp": "2026-09-13T23:57:59.555171", "train/loss/total": 2.444936513900757, "train/loss/rul": 0.6325352191925049, "train/loss/fault": 1.1083308458328247, "train/loss/anomaly": 0.7040704488754272}
+{"step": 15, "timestamp": "2026-09-13T23:57:59.616305", "val/loss/total": 2.256253480911255}
+{"step": 80, "timestamp": "2026-09-13T23:57:59.815030", "train/loss/total": 2.43341064453125, "train/loss/rul": 0.628432035446167, "train/loss/fault": 1.102412462234497, "train/loss/anomaly": 0.7025662064552307}
+{"step": 81, "timestamp": "2026-09-13T23:57:59.981196", "train/loss/total": 2.4303197860717773, "train/loss/rul": 0.6099212765693665, "train/loss/fault": 1.107431173324585, "train/loss/anomaly": 0.7129673957824707}
+{"step": 82, "timestamp": "2026-09-13T23:58:00.178576", "train/loss/total": 2.1964402198791504, "train/loss/rul": 0.4143476188182831, "train/loss/fault": 1.0936020612716675, "train/loss/anomaly": 0.6884904503822327}
+{"step": 83, "timestamp": "2026-09-13T23:58:00.346890", "train/loss/total": 2.370964527130127, "train/loss/rul": 0.5521541833877563, "train/loss/fault": 1.1102451086044312, "train/loss/anomaly": 0.7085651159286499}
+{"step": 84, "timestamp": "2026-09-13T23:58:00.494179", "train/loss/total": 2.3828635215759277, "train/loss/rul": 0.55179762840271, "train/loss/fault": 1.1288869380950928, "train/loss/anomaly": 0.7021788358688354}
+{"step": 16, "timestamp": "2026-09-13T23:58:00.565557", "val/loss/total": 2.4382084608078003}
+{"step": 85, "timestamp": "2026-09-13T23:58:00.710059", "train/loss/total": 2.420109510421753, "train/loss/rul": 0.651232898235321, "train/loss/fault": 1.0764082670211792, "train/loss/anomaly": 0.6924684643745422}
+{"step": 86, "timestamp": "2026-09-13T23:58:00.865036", "train/loss/total": 2.3704655170440674, "train/loss/rul": 0.5472536683082581, "train/loss/fault": 1.134448528289795, "train/loss/anomaly": 0.688763439655304}
+{"step": 87, "timestamp": "2026-09-13T23:58:01.038256", "train/loss/total": 2.553295850753784, "train/loss/rul": 0.782742977142334, "train/loss/fault": 1.0750223398208618, "train/loss/anomaly": 0.6955305933952332}
+{"step": 88, "timestamp": "2026-09-13T23:58:01.229568", "train/loss/total": 2.470130205154419, "train/loss/rul": 0.6550995111465454, "train/loss/fault": 1.1131360530853271, "train/loss/anomaly": 0.7018947005271912}
+{"step": 89, "timestamp": "2026-09-13T23:58:01.379117", "train/loss/total": 2.3850977420806885, "train/loss/rul": 0.619166374206543, "train/loss/fault": 1.0703469514846802, "train/loss/anomaly": 0.6955843567848206}
+{"step": 17, "timestamp": "2026-09-13T23:58:01.450029", "val/loss/total": 2.3385204076766968}
+{"step": 90, "timestamp": "2026-09-13T23:58:01.647088", "train/loss/total": 2.3649489879608154, "train/loss/rul": 0.5611224174499512, "train/loss/fault": 1.100035309791565, "train/loss/anomaly": 0.7037912607192993}
+{"step": 91, "timestamp": "2026-09-13T23:58:01.830972", "train/loss/total": 2.685607671737671, "train/loss/rul": 0.8216479420661926, "train/loss/fault": 1.1730581521987915, "train/loss/anomaly": 0.690901517868042}
+{"step": 92, "timestamp": "2026-09-13T23:58:02.025321", "train/loss/total": 2.428678035736084, "train/loss/rul": 0.593307375907898, "train/loss/fault": 1.1378732919692993, "train/loss/anomaly": 0.6974973678588867}
+{"step": 93, "timestamp": "2026-09-13T23:58:02.215417", "train/loss/total": 2.2014760971069336, "train/loss/rul": 0.44506996870040894, "train/loss/fault": 1.0592087507247925, "train/loss/anomaly": 0.697197437286377}
+{"step": 94, "timestamp": "2026-09-13T23:58:02.387133", "train/loss/total": 2.272507429122925, "train/loss/rul": 0.46289217472076416, "train/loss/fault": 1.0944783687591553, "train/loss/anomaly": 0.7151369452476501}
+{"step": 18, "timestamp": "2026-09-13T23:58:02.456356", "val/loss/total": 2.4745798110961914}
+{"step": 95, "timestamp": "2026-09-13T23:58:02.621441", "train/loss/total": 2.480888843536377, "train/loss/rul": 0.6295202374458313, "train/loss/fault": 1.1518057584762573, "train/loss/anomaly": 0.699562668800354}
+{"step": 96, "timestamp": "2026-09-13T23:58:02.793049", "train/loss/total": 2.2935068607330322, "train/loss/rul": 0.49807602167129517, "train/loss/fault": 1.102508783340454, "train/loss/anomaly": 0.6929221153259277}
+{"step": 97, "timestamp": "2026-09-13T23:58:02.983335", "train/loss/total": 2.5177435874938965, "train/loss/rul": 0.6819264888763428, "train/loss/fault": 1.1434394121170044, "train/loss/anomaly": 0.6923775672912598}
+{"step": 98, "timestamp": "2026-09-13T23:58:03.183062", "train/loss/total": 2.344625234603882, "train/loss/rul": 0.518996000289917, "train/loss/fault": 1.1217408180236816, "train/loss/anomaly": 0.703888475894928}
+{"step": 99, "timestamp": "2026-09-13T23:58:03.363333", "train/loss/total": 2.333047389984131, "train/loss/rul": 0.5516949892044067, "train/loss/fault": 1.074018955230713, "train/loss/anomaly": 0.707333505153656}
+{"step": 19, "timestamp": "2026-09-13T23:58:03.431200", "val/loss/total": 2.399039387702942}

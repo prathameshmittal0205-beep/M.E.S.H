@@ -42,7 +42,7 @@ class MESHInferenceEngine:
         self.norm_stats = checkpoint['target_normalization']
         self.model_version = checkpoint.get('model_version', 'unknown')
         
-        self.native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+        self.native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
         self.cnn_in_channels_map = {m: 1 for m in self.native_modalities}
         
         # Reconstruct Model strictly from checkpoint config

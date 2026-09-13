@@ -13,7 +13,7 @@ def generate_mock_canonical_batch(
     while the data pipeline is being built by Naman.
     """
     if native_modalities is None:
-        native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+        native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
         
     num_modalities = len(native_modalities)
     
@@ -21,7 +21,13 @@ def generate_mock_canonical_batch(
     modality_values = {}
     for mod in native_modalities:
         # Assuming 1 feature dimension for simplicity in the mock
-        modality_values[mod] = torch.randn(batch_size, window_size, 1)
+        if mod == "tool_wear":
+            # Monotonically increasing tool wear simulation, scaled to roughly [-1, 1]
+            base = torch.linspace(-1.0, 1.0, window_size).unsqueeze(0).unsqueeze(-1).repeat(batch_size, 1, 1)
+            noise = (torch.rand(batch_size, window_size, 1) - 0.5) * 0.1
+            modality_values[mod] = base + noise
+        else:
+            modality_values[mod] = torch.randn(batch_size, window_size, 1)
         
     # 2. Generate modality mask (randomly drop some modalities for robustness testing)
     # Mask shape: [batch_size, num_modalities]

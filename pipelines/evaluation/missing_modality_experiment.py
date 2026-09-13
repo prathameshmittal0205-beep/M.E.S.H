@@ -34,13 +34,13 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # 1. Load trained MESHModel
-    checkpoint_path = "checkpoints/model_best.pt"
+    checkpoint_path = "ml/checkpoints/model_best.pt"
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
     model_config = checkpoint['model_config']
     target_norm = checkpoint['target_normalization']
     rul_mean_stat, rul_std_stat = target_norm['rul_mean'], target_norm['rul_std']
     
-    native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
     cnn_in_channels_map = {m: 1 for m in native_modalities}
     
     mesh_model = MESHModel(
@@ -81,10 +81,10 @@ def main():
     conditions = {
         "0_dropped_baseline": [],
         "1_dropped_temperature": [0],
-        "1_dropped_vibration": [1],
+        "1_dropped_tool_wear": [1],
         "1_dropped_rotational_speed": [2],
         "1_dropped_torque": [3],
-        "2_dropped_temp_vib": [0, 1],
+        "2_dropped_temp_wear": [0, 1],
         "2_dropped_speed_torque": [2, 3],
         "4_dropped_total_dropout": [0, 1, 2, 3]
     }

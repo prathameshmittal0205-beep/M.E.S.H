@@ -97,7 +97,7 @@ if __name__ == "__main__":
     checkpoint = torch.load("checkpoints/model_best.pt", map_location=device, weights_only=False)
     config = checkpoint['model_config']
     
-    native_modalities = ["temperature", "vibration", "rotational_speed", "torque"]
+    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
     model = MESHModel(
         native_modalities=native_modalities,
         cnn_in_channels_map={m: 1 for m in native_modalities},
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # Generate 1 small batch
     batch = generate_mock_canonical_batch(batch_size=2, window_size=20)
     mod_values = {k: v.to(device) for k, v in batch.modality_values.items()}
-    # Let's forcefully mask out modality 1 (vibration) for BOTH samples to verify attention is 0
+    # Let's forcefully mask out modality 1 (tool_wear) for BOTH samples to verify attention is 0
     mask = batch.modality_mask.to(device)
     mask[:, 1] = 0.0 
     
@@ -122,8 +122,8 @@ if __name__ == "__main__":
     attn_weights = explainer.get_attention_weights(mod_values, mask)
     print(f"Shape: {attn_weights.shape}")
     print(f"Attention Weights for Sample 0:\n{attn_weights[0]}")
-    print(f"Is vibration (index 1) query exactly 0 in attention? {torch.all(attn_weights[:, :, :, 1, :] == 0).item()}")
-    print(f"Is vibration (index 1) key exactly 0 in attention? {torch.all(attn_weights[:, :, :, :, 1] == 0).item()}")
+    print(f"Is tool_wear (index 1) query exactly 0 in attention? {torch.all(attn_weights[:, :, :, 1, :] == 0).item()}")
+    print(f"Is tool_wear (index 1) key exactly 0 in attention? {torch.all(attn_weights[:, :, :, :, 1] == 0).item()}")
     
     print("\n2. GRADIENT SHAP ATTRIBUTIONS (RUL Head)")
     attributions = explainer.get_gradientshap_attribution(mod_values, mask, target_head="rul")

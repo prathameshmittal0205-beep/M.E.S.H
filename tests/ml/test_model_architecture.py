@@ -6,8 +6,8 @@ from ml.models.mesh_model import MESHModel
 @pytest.fixture
 def base_config():
     return {
-        "native_modalities": ["temperature", "vibration", "rotational_speed", "torque"],
-        "cnn_in_channels_map": {"temperature": 1, "vibration": 1, "rotational_speed": 1, "torque": 1},
+        "native_modalities": ["temperature", "tool_wear", "rotational_speed", "torque"],
+        "cnn_in_channels_map": {"temperature": 1, "tool_wear": 1, "rotational_speed": 1, "torque": 1},
         "encoder_config": {
             "cnn_out_channels": 8,
             "cnn_kernel_size": 3,
@@ -30,7 +30,7 @@ def sample_batch():
     seq_len = 20
     mod_values = {
         "temperature": torch.randn(B, seq_len, 1),
-        "vibration": torch.randn(B, seq_len, 1),
+        "tool_wear": torch.randn(B, seq_len, 1),
         "rotational_speed": torch.randn(B, seq_len, 1),
         "torque": torch.randn(B, seq_len, 1),
     }
@@ -58,7 +58,7 @@ def test_masked_modality_zeroing(model, sample_batch):
     model.eval()
     mod_values, mask = sample_batch
     
-    # Mask out vibration (index 1) for sample 0
+    # Mask out tool_wear (index 1) for sample 0
     mask[0, 1] = 0.0
     
     with torch.no_grad():
@@ -74,7 +74,7 @@ def test_masked_modality_zeroing(model, sample_batch):
     assert hasattr(model.fusion, "_last_masked_out"), "Model must expose _last_masked_out for test verification."
     masked_out = model.fusion._last_masked_out
     # masked_out shape: [B * seq_len, num_modalities, embed_dim]
-    # B=2, seq_len=20 -> [40, 4, 32]. Sample 0 is indices 0-19. Modality 1 (vibration).
+    # B=2, seq_len=20 -> [40, 4, 32]. Sample 0 is indices 0-19. Modality 1 (tool_wear).
     sample_0_vib = masked_out[0:20, 1, :]
     assert torch.all(sample_0_vib == 0.0)
 

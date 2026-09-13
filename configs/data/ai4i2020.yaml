@@ -1,0 +1,57 @@
+# MESH Data Pipeline Configuration: AI4I 2020 Predictive Maintenance Dataset
+# Governed by docs/data/DATA_PIPELINE.md, docs/data/DATASET_STRATEGY.md, and docs/NO_HALLUCINATION_POLICY.md
+
+dataset:
+  name: "ai4i2020"
+  dataset_id: "ai4i2020"
+  dataset_version: "1.0.0"
+  subdataset: null
+  adapter_class: "AI4IAdapter"
+  drop_invariant_sensors: false
+  run_identifier_col: "Product ID"
+  time_col: "UDI"
+  sampling_interval_seconds: null  # Synthetic snapshot of independent milling machines
+  target_cols:
+    - "Machine failure"
+    - "TWF"
+    - "HDF"
+    - "PWF"
+    - "OSF"
+    - "RNF"
+
+paths:
+  raw_dir: "data/raw/ai4i2020"
+  train_file: "data/raw/ai4i2020/ai4i2020.csv"
+  test_file: null  # Single CSV partitioned via stratified asset-level split
+  rul_file: null   # Binary failure classification benchmark; no continuous RUL
+  provenance_output: "data/raw/provenance.json"
+  qa_report_output: "data/interim/qa_reports/ai4i2020_qa.json"
+  split_output: "data/processed/splits/ai4i2020_split.json"
+  scaler_json_output: "data/processed/scalers/ai4i2020_scaler.json"
+  scaler_pkl_output: "data/processed/scalers/ai4i2020_scaler.pkl"
+  processed_dir: "data/processed/ai4i2020"
+
+split:
+  strategy: "asset_stratified"
+  seed: 42
+  train_ratio: 0.70  # 7,000 distinct machine assets
+  val_ratio: 0.15    # 1,500 distinct machine assets
+  test_ratio: 0.15   # 1,500 distinct machine assets
+  stratify_col: "Machine failure"  # Preserves ~3.39% rare failure proportion across all splits
+
+normalization:
+  scaler_type: "standard_zscore"
+  scaler_version: "1.0.0"
+  fit_on: "train_only"  # Strict zero-leakage: fit only on 7,000 train assets
+  constant_channel_treatment: "zero_variance_std_one_mean_center"
+
+windowing:
+  window_size: 1  # Static snapshot per independent asset (T=1); stitching sliding windows across assets forbidden
+  stride: null
+  preprocessor_version: "v1.0_static_snapshot"
+  pad_short_runs: false
+
+masking:
+  missingness_type: "synthetic_controlled_dropout"
+  ablation_protocol: "single_modality_test_dropout"
+  source_split: "test"  # Ablations generated strictly from held-out test split (1,500 assets)

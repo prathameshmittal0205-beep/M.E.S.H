@@ -1,0 +1,52 @@
+# MESH Data Pipeline Configuration: NASA C-MAPSS FD001
+# Governed by docs/data/DATA_PIPELINE.md, docs/team/NAMAN_DATA.md, and docs/NO_HALLUCINATION_POLICY.md
+
+dataset:
+  name: "cmapss_fd001"
+  dataset_id: "nasa_cmapss_fd001"
+  dataset_version: "1.0.0"
+  subdataset: "FD001"
+  adapter_class: "CMAPSSAdapter"
+  drop_invariant_sensors: false  # Preserves all 21 sensors (FD001 has 6 invariant sensors: s_1, s_5, s_10, s_16, s_18, s_19)
+  run_identifier_col: "unit_number"
+  time_col: "time_cycles"
+  sampling_interval_seconds: null  # Discrete operational flight cycles (cruise condition)
+  target_cols:
+    - "target_rul"
+
+paths:
+  raw_dir: "data/raw/cmapss"
+  train_file: "data/raw/cmapss/train_FD001.txt"
+  test_file: "data/raw/cmapss/test_FD001.txt"
+  rul_file: "data/raw/cmapss/RUL_FD001.txt"
+  provenance_output: "data/raw/provenance.json"
+  qa_report_output: "data/interim/qa_reports/cmapss_fd001_qa.json"
+  split_output: "data/processed/splits/cmapss_fd001_split.json"
+  scaler_json_output: "data/processed/scalers/cmapss_fd001_scaler.json"
+  scaler_pkl_output: "data/processed/scalers/cmapss_fd001_scaler.pkl"
+  processed_dir: "data/processed/cmapss_fd001"
+
+split:
+  strategy: "asset_level_engine_unit_holdout"
+  seed: 42
+  train_ratio: 0.80  # 80 engines for training out of 100 training engines
+  val_ratio: 0.20    # 20 engines for validation out of 100 training engines
+  test_ratio: null   # 100 official test engines loaded directly from test_FD001.txt
+  stratify_col: null # Continuous degradation trajectories; split strictly by asset unit ID
+
+normalization:
+  scaler_type: "standard_zscore"
+  scaler_version: "1.0.0"
+  fit_on: "train_only"  # Strict zero-leakage: fit only on 80 train engines
+  constant_channel_treatment: "zero_variance_std_one_mean_center"
+
+windowing:
+  window_size: 20
+  stride: 5
+  preprocessor_version: "v1.0_window20_stride5"
+  pad_short_runs: false  # Only windows with full length T=20 are extracted
+
+masking:
+  missingness_type: "synthetic_controlled_dropout"
+  ablation_protocol: "single_modality_test_dropout"
+  source_split: "test"  # Ablations generated strictly from held-out test split

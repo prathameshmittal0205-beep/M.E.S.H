@@ -3,6 +3,9 @@ import torch.nn.functional as F
 import yaml
 import numpy as np
 from typing import Dict, Any
+import argparse
+from torch.utils.data import DataLoader
+from ml.data.naman_adapter import NpzDataset, canonical_collate_fn
 
 try:
     from sklearn.metrics import precision_recall_fscore_support, roc_auc_score, accuracy_score
@@ -11,6 +14,7 @@ except ImportError:
     SKLEARN_AVAILABLE = False
 
 from ml.models.mesh_model import MESHModel
+from ml.models.ai4i_model import AI4IModel
 from ml.data.mock_canonical_batch import generate_mock_canonical_batch
 
 def compute_regression_metrics(y_true: torch.Tensor, y_pred: torch.Tensor, y_var: torch.Tensor) -> Dict[str, Any]:
@@ -65,7 +69,7 @@ def compute_classification_metrics(y_true: np.ndarray, y_pred_probs: np.ndarray,
     metrics["Accuracy"] = accuracy_score(y_true, y_pred_classes)
     return metrics
 
-def evaluate_model(checkpoint_path: str):
+def evaluate_model(checkpoint_path: str, dataset_path: str, dataset_name: str):
     print(f"=== LOADING CHECKPOINT: {checkpoint_path} ===")
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -79,93 +83,153 @@ def evaluate_model(checkpoint_path: str):
     
     print(f"Extracted Normalization Stats -> Mean: {rul_mean_stat}, Std: {rul_std_stat}")
     
-    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
+    native_modalities = model_config.get('native_modalities', ["temperature", "tool_wear", "rotational_speed", "torque"])
     cnn_in_channels_map = {m: 1 for m in native_modalities}
     
-    model = MESHModel(
-        native_modalities=native_modalities,
-        cnn_in_channels_map=cnn_in_channels_map,
-        encoder_config=model_config['encoder'],
-        fusion_config=model_config['fusion'],
-        temporal_config=model_config['temporal'],
-        heads_config=model_config['heads'],
-        dropout_p=0.0 # Evaluation mode
-    )
+    if dataset_name == 'ai4i':
+        model = AI4IModel(
+            native_modalities=native_modalities,
+            modality_channels=model_config['modality_channels'],
+            embed_dim=model_config['embed_dim'],
+            num_heads=model_config['num_heads'],
+            num_fault_classes=model_config['num_fault_classes'],
+            dropout_p=0.0
+        )
+    else:
+        encoder_config = model_config.get('encoder_config', model_config.get('encoder'))
+        fusion_config = model_config.get('fusion_config', model_config.get('fusion'))
+        temporal_config = model_config.get('temporal_config', model_config.get('temporal'))
+        heads_config = model_config.get('heads_config', model_config.get('heads'))
+        modality_channels = model_config.get('modality_channels', cnn_in_channels_map)
+        
+        model = MESHModel(
+            native_modalities=native_modalities,
+            cnn_in_channels_map=modality_channels,
+            encoder_config=encoder_config,
+            fusion_config=fusion_config,
+            temporal_config=temporal_config,
+            heads_config=heads_config,
+            dropout_p=0.0 # Evaluation mode
+        )
     model.load_state_dict(checkpoint['state_dict'])
     model.to(device)
     model.eval()
     
-    # TODO: When Naman's real data lands, remove this mock generation. 
-    # The evaluation must load a genuinely persisted test split (e.g., split by machine_id or time)
-    # to avoid data leakage, rather than randomly generating a batch.
-    print("\nGenerating fresh held-out test set (N=100) to guarantee non-overlap with training splits...")
-    test_batch = generate_mock_canonical_batch(batch_size=100, window_size=20)
+    print(f"\nLoading test dataset from {dataset_path}...")
+    test_dataset = NpzDataset(dataset_path, native_modalities, dataset_name)
+    test_loader = DataLoader(
+        test_dataset, 
+        batch_size=128, 
+        shuffle=False, 
+        collate_fn=lambda b: canonical_collate_fn(b, native_modalities)
+    )
+
+    y_rul_true_real_list = []
+    y_fault_true_list = []
+    y_anomaly_true_list = []
     
-    modality_values = {k: v.to(device) for k, v in test_batch.modality_values.items()}
-    modality_mask = test_batch.modality_mask.to(device)
-    y_rul_true_real = test_batch.target_rul.to(device) # Real units
-    y_fault_true = test_batch.target_fault_class.cpu().numpy()
-    
-    # Binarize anomaly since the mock target is uniform random [0,1],
-    # and AUC/F1 require binary targets.
-    y_anomaly_true = torch.round(test_batch.target_degradation).cpu().numpy()
+    pred_rul_mean_real_list = []
+    pred_rul_var_real_list = []
+    pred_fault_probs_list = []
+    pred_anomaly_probs_list = []
 
     print("\n=== RUNNING EVALUATION ===")
     with torch.no_grad():
-        preds, _ = model(modality_values, modality_mask)
-        
-        # 1. De-normalize RUL predictions to REAL units
-        pred_rul_mean_real = (preds['rul_mean'] * rul_std_stat) + rul_mean_stat
-        # Variance scales by std^2
-        pred_rul_var_real = preds['rul_variance'] * (rul_std_stat ** 2)
-        
+        for test_batch in test_loader:
+            modality_values = {k: v.to(device) for k, v in test_batch.modality_values.items()}
+            modality_mask = test_batch.modality_mask.to(device)
+            
+            preds, _ = model(modality_values, modality_mask)
+            
+            if test_batch.target_rul is not None:
+                y_rul_true_real_list.append(test_batch.target_rul.cpu())
+                pred_rul_mean_real_list.append(((preds['rul_mean'] * rul_std_stat) + rul_mean_stat).cpu())
+                pred_rul_var_real_list.append((preds['rul_variance'] * (rul_std_stat ** 2)).cpu())
+            
+            if test_batch.target_fault_class is not None:
+                y_fault_true_list.append(test_batch.target_fault_class.cpu().numpy())
+                pred_fault_probs_list.append(F.softmax(preds['fault_logits'], dim=1).cpu().numpy())
+                
+            if test_batch.target_degradation is not None:
+                y_anomaly_true_list.append(test_batch.target_degradation.cpu().numpy())
+                pred_anomaly_probs_list.append(torch.sigmoid(preds['anomaly_logit']).cpu().numpy())
+                
+    if len(y_rul_true_real_list) > 0:
+        y_rul_true_real = torch.cat(y_rul_true_real_list)
+        pred_rul_mean_real = torch.cat(pred_rul_mean_real_list)
+        pred_rul_var_real = torch.cat(pred_rul_var_real_list)
         rul_metrics = compute_regression_metrics(y_rul_true_real, pred_rul_mean_real, pred_rul_var_real)
+    else:
+        rul_metrics = {}
+        y_rul_true_real = torch.zeros(0)
+        pred_rul_mean_real = torch.zeros(0)
+        pred_rul_var_real = torch.zeros(0)
         
-        # 2. Fault Metrics (Multi-class)
-        pred_fault_probs = F.softmax(preds['fault_logits'], dim=1).cpu().numpy()
+    if len(y_fault_true_list) > 0:
+        y_fault_true = np.concatenate(y_fault_true_list)
+        pred_fault_probs = np.concatenate(pred_fault_probs_list)
         fault_metrics = compute_classification_metrics(y_fault_true, pred_fault_probs, is_binary=False)
+    else:
+        fault_metrics = {}
+        pred_fault_probs = np.zeros((0, 1))
         
-        # 3. Anomaly Metrics (Binary)
-        pred_anomaly_probs = torch.sigmoid(preds['anomaly_logit']).cpu().numpy()
+    if len(y_anomaly_true_list) > 0:
+        y_anomaly_true = np.concatenate(y_anomaly_true_list)
+        pred_anomaly_probs = np.concatenate(pred_anomaly_probs_list)
         anomaly_metrics = compute_classification_metrics(y_anomaly_true, pred_anomaly_probs, is_binary=True)
-        
-    print("\n[Regression] RUL Metrics (REAL UNITS - Cycles):")
-    for k, v in rul_metrics.items():
-        if isinstance(v, float):
-             print(f"  {k}: {v:.4f}")
-        else:
-             print(f"  {k}: {v}")
-             
-    # --- DIAGNOSTICS ---
-    print("\n--- DIAGNOSTICS ---")
-    std = torch.sqrt(pred_rul_var_real)
-    residuals = (y_rul_true_real - pred_rul_mean_real) / std
-    print(f"Standardized Residuals - Min: {residuals.min().item():.4f}, Max: {residuals.max().item():.4f}, Mean: {residuals.mean().item():.4f}, Std: {residuals.std().item():.4f}")
+    else:
+        anomaly_metrics = {}
+        pred_anomaly_probs = np.zeros(0)
+
+    print("\\n[Regression] RUL Metrics (REAL UNITS - Cycles):")
+    if rul_metrics:
+        for k, v in rul_metrics.items():
+            if isinstance(v, float):
+                 print(f"  {k}: {v:.4f}")
+            else:
+                 print(f"  {k}: {v}")
+    else:
+        print("  (No RUL targets)")
+
+    print("\\n[Classification] Fault Metrics:")
+    if fault_metrics:
+        for k, v in fault_metrics.items():
+            if isinstance(v, float):
+                 print(f"  {k}: {v:.4f}")
+            else:
+                 print(f"  {k}: {v}")
+    else:
+        print("  (No Fault targets)")
+
+    print("\\n[Classification] Anomaly Metrics:")
+    if anomaly_metrics:
+        for k, v in anomaly_metrics.items():
+            if isinstance(v, float):
+                 print(f"  {k}: {v:.4f}")
+            else:
+                 print(f"  {k}: {v}")
+    else:
+        print("  (No Anomaly targets)")
+
+    print("\\n--- DIAGNOSTICS ---")
+    if len(y_rul_true_real) > 0:
+        std = torch.sqrt(pred_rul_var_real)
+        residuals = (y_rul_true_real - pred_rul_mean_real) / std
+        print(f"Standardized Residuals - Min: {residuals.min().item():.4f}, Max: {residuals.max().item():.4f}, Mean: {residuals.mean().item():.4f}, Std: {residuals.std().item():.4f}")
     
-    anom_probs = pred_anomaly_probs
-    print(f"Anomaly Probs - Min: {anom_probs.min():.4f}, Max: {anom_probs.max():.4f}, Mean: {anom_probs.mean():.4f}")
-    pred_pos = (anom_probs > 0.5).sum()
-    print(f"Anomaly Predicted Positives: {pred_pos} / {len(anom_probs)}")
+    if len(pred_anomaly_probs) > 0:
+        anom_probs = pred_anomaly_probs
+        print(f"Anomaly Probs - Min: {anom_probs.min():.4f}, Max: {anom_probs.max():.4f}, Mean: {anom_probs.mean():.4f}")
     
-    fault_classes = np.argmax(pred_fault_probs, axis=1)
-    unique, counts = np.unique(fault_classes, return_counts=True)
-    fault_dist = dict(zip(unique, counts))
-    print(f"Fault Predicted Class Distribution: {fault_dist}")
-    print("-------------------")
-             
-    print("\n[Classification] Fault Metrics:")
-    for k, v in fault_metrics.items():
-        if isinstance(v, float):
-             print(f"  {k}: {v:.4f}")
-        else:
-             print(f"  {k}: {v}")
-             
-    print("\n[Classification] Anomaly Detection Metrics:")
-    for k, v in anomaly_metrics.items():
-        if isinstance(v, float):
-             print(f"  {k}: {v:.4f}")
-        else:
-             print(f"  {k}: {v}")
+    if len(pred_fault_probs) > 0:
+        fault_probs = pred_fault_probs.max(axis=1)
+        print(f"Max Fault Probs (Confidence) - Min: {fault_probs.min():.4f}, Max: {fault_probs.max():.4f}, Mean: {fault_probs.mean():.4f}")
 
 if __name__ == "__main__":
-    evaluate_model("checkpoints/model_best.pt")
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--checkpoint", required=True)
+    parser.add_argument("--dataset_path", required=True)
+    parser.add_argument("--dataset_name", required=True)
+    args = parser.parse_args()
+    evaluate_model(args.checkpoint, args.dataset_path, args.dataset_name)

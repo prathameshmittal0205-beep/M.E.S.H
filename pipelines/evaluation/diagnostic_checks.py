@@ -51,7 +51,9 @@ model_cmapss = MESHModel(
     heads_config=model_config['heads_config'],
     dropout_p=0.0
 )
-ckpt_cmapss = torch.load("checkpoints/cmapss/model_best.pt", map_location=device, weights_only=False)
+import sys
+    ckpt_cmapss_path = sys.argv[1] if len(sys.argv) > 1 else "checkpoints/cmapss/cmapss_v1_trained.pt"
+    ckpt_cmapss = torch.load(ckpt_cmapss_path, map_location=device, weights_only=False)
 if 'state_dict' in ckpt_cmapss:
     try:
         model_cmapss.load_state_dict(ckpt_cmapss['state_dict'])
@@ -99,7 +101,8 @@ model_ai4i = AI4IModel(
     enable_rul=ai4i_model_config.get('enable_rul', False),
     dropout_p=0.0
 )
-ckpt_ai4i = torch.load("checkpoints/ai4i/model_best.pt", map_location=device, weights_only=False)
+ckpt_ai4i_path = sys.argv[2] if len(sys.argv) > 2 else "checkpoints/ai4i/ai4i_v1_trained.pt"
+    ckpt_ai4i = torch.load(ckpt_ai4i_path, map_location=device, weights_only=False)
 model_ai4i.load_state_dict(ckpt_ai4i['state_dict'])
 model_ai4i.eval()
 

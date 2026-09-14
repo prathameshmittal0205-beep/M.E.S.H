@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.optim as optim
 import yaml
 import datetime
+import time
 from torch.utils.data import DataLoader, Dataset
 import torch.nn.functional as F
 from ml.models.mesh_model import MESHModel
@@ -13,6 +14,7 @@ from pipelines.training.tracker import ExperimentTracker
 PREV_STATS = {}
 from ml.data.mock_canonical_batch import generate_mock_canonical_batch
 from ml.data.contract import CanonicalBatch
+from sklearn.metrics import precision_recall_fscore_support
 
 # Mock Dataset until data pipeline is ready
 class MockDataset(Dataset):
@@ -124,6 +126,10 @@ def main():
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
+
+    pos_weight = None
+    if 'pos_weight' in train_config:
+        pos_weight = torch.tensor([train_config['pos_weight']], device=device)
     
     optimizer = optim.AdamW(
         model.parameters(), 
@@ -179,9 +185,14 @@ def main():
     print(f"Training on {device} for {epochs} epochs...")
     
     global_step = 0
-    best_val_loss = float('inf')
+    if train_config.get('dataset_name', '') == 'ai4i':
+        best_val_metric = -1.0
+    else:
+        best_val_metric = float('inf')
+    epochs_no_improve = 0
     
     for epoch in range(epochs):
+        start_time = time.time()
         # Training Phase
         model.train()
         epoch_train_loss = 0.0
@@ -255,7 +266,10 @@ def main():
             loss_anomaly = torch.tensor(0.0, device=device)
             if w.get('anomaly', 0) > 0 and 'anomaly_logit' in preds and batch.target_degradation is not None:
                 y_anomaly = batch.target_degradation.to(device)
-                loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
+                if pos_weight is not None:
+                    loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly, pos_weight=pos_weight)
+                else:
+                    loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
                 loss += w['anomaly'] * loss_anomaly
             
             # DIAGNOSTIC CHECK
@@ -329,6 +343,10 @@ def main():
         # Validation Phase
         model.eval()
         val_loss = 0.0
+        val_y_true_anom = []
+        val_y_pred_anom = []
+        val_y_true_fault = []
+        val_y_pred_fault = []
         with torch.no_grad():
             for batch in val_loader:
                 modality_values = {k: v.to(device) for k, v in batch.modality_values.items()}
@@ -358,9 +376,19 @@ def main():
                     
                 loss_anomaly = torch.tensor(0.0, device=device)
                 if w.get('anomaly', 0) > 0 and 'anomaly_logit' in preds and batch.target_degradation is not None:
-                    loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
+                    if pos_weight is not None:
+                        loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly, pos_weight=pos_weight)
+                    else:
+                        loss_anomaly = F.binary_cross_entropy_with_logits(preds['anomaly_logit'], y_anomaly)
                     loss += w['anomaly'] * loss_anomaly
                 val_loss += loss.item()
+                
+                if y_anomaly is not None:
+                    val_y_true_anom.append(y_anomaly.cpu().numpy())
+                    val_y_pred_anom.append(torch.sigmoid(preds['anomaly_logit']).cpu().numpy())
+                if y_fault is not None:
+                    val_y_true_fault.append(y_fault.cpu().numpy())
+                    val_y_pred_fault.append(preds['fault_logits'].cpu().numpy())
                 
         avg_val_loss = val_loss / len(val_loader)
         
@@ -368,22 +396,53 @@ def main():
         avg_fault_loss = epoch_fault_loss / len(train_loader)
         avg_anomaly_loss = epoch_anomaly_loss / len(train_loader)
         
-        # Diagnostic prints for Variance and MAE
+        val_anom_f1 = 0.0
+        val_anom_recall = 0.0
+        val_anom_precision = 0.0
+        val_macro_f1 = 0.0
+        if len(val_y_true_anom) > 0:
+            y_true_a = np.concatenate(val_y_true_anom)
+            y_pred_a = (np.concatenate(val_y_pred_anom) > 0.5).astype(int)
+            val_anom_precision, val_anom_recall, val_anom_f1, _ = precision_recall_fscore_support(y_true_a, y_pred_a, average='binary', zero_division=0)
+            
+        if len(val_y_true_fault) > 0:
+            y_true_f = np.concatenate(val_y_true_fault)
+            y_pred_f = np.argmax(np.concatenate(val_y_pred_fault), axis=1)
+            _, _, val_macro_f1, _ = precision_recall_fscore_support(y_true_f, y_pred_f, average='macro', zero_division=0)
+        
+        epoch_time = time.time() - start_time
         components_str = f"[RUL: {avg_rul_loss:.4f} | Fault: {avg_fault_loss:.4f} | Anomaly: {avg_anomaly_loss:.4f}]"
-        if epoch_rul_count > 0:
-            print(f"Epoch [{epoch+1}/{epochs}] - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f} | Train MAE: {avg_train_mae:.4f} | Train Var: {avg_train_var:.4f}")
+        
+        if train_config.get('dataset_name', '') == 'ai4i':
+            print(f"Epoch [{epoch+1}/{epochs}] ({epoch_time:.1f}s) - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f} | Val Anomaly Recall: {val_anom_recall:.4f} | Val Anomaly F1: {val_anom_f1:.4f} | Val Macro-F1: {val_macro_f1:.4f}")
+        elif epoch_rul_count > 0:
+            print(f"Epoch [{epoch+1}/{epochs}] ({epoch_time:.1f}s) - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f} | Train MAE: {avg_train_mae:.4f} | Train Var: {avg_train_var:.4f}")
         else:
-            print(f"Epoch [{epoch+1}/{epochs}] - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f}")
+            print(f"Epoch [{epoch+1}/{epochs}] ({epoch_time:.1f}s) - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f}")
         
         tracker.log_metrics({'loss/total': avg_val_loss}, epoch, prefix="val")
         
-        # Save best checkpoint
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            
-            # Generate a version string based on training time
+        patience = train_config.get('early_stopping_patience', 10)
+        is_best = False
+        if train_config.get('dataset_name', '') == 'ai4i':
+            monitor_metric = val_macro_f1
+            if monitor_metric > best_val_metric:
+                best_val_metric = monitor_metric
+                epochs_no_improve = 0
+                is_best = True
+            else:
+                epochs_no_improve += 1
+        else:
+            monitor_metric = avg_val_loss
+            if monitor_metric < best_val_metric:
+                best_val_metric = monitor_metric
+                epochs_no_improve = 0
+                is_best = True
+            else:
+                epochs_no_improve += 1
+        
+        if is_best:
             model_version = f"v1.0-{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
-            
             checkpoint = {
                 'epoch': epoch,
                 'state_dict': model.state_dict(),
@@ -393,16 +452,22 @@ def main():
                 'model_version': model_version,
                 'target_normalization': train_config.get('target_normalization', {'rul_mean': 0.0, 'rul_std': 1.0}),
                 'metrics': {
-                    'best_val_loss': best_val_loss,
+                    'best_metric': best_val_metric,
                     'epoch': epoch
                 }
             }
             checkpoint_dir = train_config.get('checkpoint_dir', 'checkpoints/')
+            checkpoint_name = train_config.get('checkpoint_name', 'model_best.pt')
             os.makedirs(checkpoint_dir, exist_ok=True)
-            torch.save(checkpoint, os.path.join(checkpoint_dir, "model_best.pt"))
+            torch.save(checkpoint, os.path.join(checkpoint_dir, checkpoint_name))
+            print(f"  -> Saved new best checkpoint to {checkpoint_name} (Metric: {best_val_metric:.4f})")
             
-    print("Training Complete. Best model saved.")
+        if epochs_no_improve >= patience:
+            print(f"Early stopping triggered after {epoch+1} epochs! (Patience: {patience})")
+            break
+            
+    print("Training Complete.")
     tracker.close()
-
 if __name__ == "__main__":
     main()
+

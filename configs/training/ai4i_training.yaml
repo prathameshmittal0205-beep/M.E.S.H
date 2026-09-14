@@ -1,22 +1,26 @@
 experiment_name: "ai4i_baseline"
 log_dir: "logs/"
 checkpoint_dir: "checkpoints/ai4i/"
+checkpoint_name: "ai4i_v1_trained.pt"
 dataset_path: "data/processed/ai4i2020/train/data.npz"
 dataset_name: "ai4i"
 
 batch_size: 32
-epochs: 3
+epochs: 100
+early_stopping_patience: 10
 variance_warmup_epochs: 1
 learning_rate: 0.001
 weight_decay: 0.0001
 clip_grad: 1.0
+
+pos_weight: 28.536
 
 loss_weights:
   rul: 1.0
   fault: 1.0 
   anomaly: 1.0 
 
-modality_dropout_p: 0.1
+modality_dropout_p: 0.15
 
 target_normalization:
   rul_mean: 107.8763

@@ -94,7 +94,9 @@ if __name__ == "__main__":
     
     # Load Model
     from ml.models.mesh_model import MESHModel
-    checkpoint = torch.load("checkpoints/model_best.pt", map_location=device, weights_only=False)
+    import sys
+    ckpt_path = sys.argv[1] if len(sys.argv) > 1 else "checkpoints/cmapss/cmapss_v1_trained.pt"
+    checkpoint = torch.load(ckpt_path, map_location=device, weights_only=False)
     config = checkpoint['model_config']
     
     native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]

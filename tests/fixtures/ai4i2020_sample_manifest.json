@@ -1,0 +1,99 @@
+{
+  "dataset_id": "ai4i2020",
+  "split_name": "train",
+  "sample_count": 20,
+  "run_count": 20,
+  "runs": [
+    "H29424",
+    "H29425",
+    "H29432",
+    "H29434",
+    "H29441",
+    "H29462",
+    "H29466",
+    "H29481",
+    "H29525",
+    "H29552",
+    "H29557",
+    "H29560",
+    "H29569",
+    "H29581",
+    "H29595",
+    "H29606",
+    "H29607",
+    "H29626",
+    "H29682",
+    "H29684"
+  ],
+  "window_size": 1,
+  "stride": null,
+  "preprocessor_version": "v1.0_static_snapshot",
+  "scaler_version": "1.0.0",
+  "files": {
+    "canonical_data_npz": "ai4i2020_sample.npz"
+  },
+  "modalities": {
+    "temperature": {
+      "channels": [
+        "Air temperature [K]",
+        "Process temperature [K]"
+      ],
+      "units": [
+        "K",
+        "K"
+      ],
+      "shape": [
+        20,
+        1,
+        2
+      ]
+    },
+    "speed": {
+      "channels": [
+        "Rotational speed [rpm]"
+      ],
+      "units": [
+        "rpm"
+      ],
+      "shape": [
+        20,
+        1,
+        1
+      ]
+    },
+    "torque": {
+      "channels": [
+        "Torque [Nm]"
+      ],
+      "units": [
+        "Nm"
+      ],
+      "shape": [
+        20,
+        1,
+        1
+      ]
+    },
+    "tool_wear": {
+      "channels": [
+        "Tool wear [min]"
+      ],
+      "units": [
+        "min"
+      ],
+      "shape": [
+        20,
+        1,
+        1
+      ]
+    }
+  },
+  "target_statistics": {
+    "total_failures": 0,
+    "failure_rate": 0.0,
+    "fault_class_distribution": {
+      "0": 20
+    }
+  },
+  "created_at": "2026-09-13T17:50:59.492230+00:00"
+}

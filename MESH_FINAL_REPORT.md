@@ -65,7 +65,16 @@ Built strict PyTest suites (`tests/ml/`) that are **100% Passing**:
 * `attention_weights` are natively suppressed to save bandwidth. Pass `return_attention=True` to `engine.predict()` if visual explainability is requested by the dashboard.
 * Traceability is guaranteed: parse `model_version` directly from the `PredictionBundle` to log exactly which checkpoint generated the output.
 
-## 12. Open Issues (For Naman)
+## 12. CMAPSS vs. AI4I Architectural Split
+> [!NOTE]
+> **Design Decision:** The architecture is formally split into two native model configurations due to strictly disjoint modalities and different temporal assumptions between the target datasets.
+
+* **CMAPSS (`cmapss_model.yaml`):** A 24-channel temporal problem ($T=20$) utilizing 5 logical modalities (`temperatures`, `pressures`, `speeds`, `gas_flow`, `operational_settings`). It uses the full `MESHModel` (CNN + BiLSTM + Temporal Transformer). Because CMAPSS provides no classification targets, the Fault and Anomaly heads are strictly bypassed during training and inference.
+* **AI4I (`ai4i_model.yaml`):** A 4-channel static problem ($T=1$). The temporal layers were identified as wasteful and physically incorrect for this dataset. We implemented a new lightweight `StaticModalityEncoder` (MLP) mapping static snapshots to embeddings. It reuses the mask-aware cross-attention fusion seamlessly without a temporal dimension and directly predicts all 3 heads (RUL, Fault, Anomaly).
+
+**Current Status (Blocked):** We are currently awaiting Naman to provide a mock data fixture (`tests/fixtures/`) that represents the real, compiled data schemas to begin real-data training. The ML inference and validation layer is fully prepared to consume this data the moment it drops.
+
+## 13. Open Issues (For Naman)
 > [!IMPORTANT]
 > **Dataset Selection & Modality Alignment:** Per the project README, AI4I 2020 is a synthetic benchmark only and cannot be used for our real-data claims. The real candidate datasets are NASA FEMTO/PRONOSTIA, NASA IMS Bearings, NASA Milling Wear, and QIT-CEMC. Because no single real dataset perfectly provides the original DA1 four channels (temperature, rotational speed, torque, tool wear) alongside a clean RUL target, Naman must finalize the real dataset selection and output its **native** channels. We will not fabricate a 4-channel dataset. Once the real dataset is chosen, the model's `native_modalities` configuration must be updated to align with the actual sensors provided by that dataset.
 

@@ -1,7 +1,7 @@
 experiment_name: "da1_base_training"
 seed: 42
 
-epochs: 20
+epochs: 2
 batch_size: 32
 learning_rate: 1.0e-5
 weight_decay: 1.0e-4

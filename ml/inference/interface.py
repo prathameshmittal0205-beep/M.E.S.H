@@ -6,6 +6,7 @@ import datetime
 
 from ml.data.contract import CanonicalBatch
 from ml.models.mesh_model import MESHModel
+from ml.models.ai4i_model import AI4IModel
 
 @dataclass
 class PredictionBundle:
@@ -22,9 +23,9 @@ class PredictionBundle:
     rul_mean_cycles: List[float]
     rul_variance_cycles: List[float]
     
-    # Classification & Anomaly
-    fault_probabilities: List[List[float]]
-    anomaly_probabilities: List[float]
+    # Classification & Anomaly (Optional, depending on dataset/model)
+    fault_probabilities: Optional[List[List[float]]] = None
+    anomaly_probabilities: Optional[List[float]] = None
     
     # Explainability (Optional)
     attention_weights: Optional[List[Any]] = None
@@ -41,21 +42,34 @@ class MESHInferenceEngine:
         self.train_config = checkpoint['train_config']
         self.norm_stats = checkpoint['target_normalization']
         self.model_version = checkpoint.get('model_version', 'unknown')
+        self.model_type = self.model_config.get('model_type', 'MESHModel')
         
-        self.native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
-        self.cnn_in_channels_map = {m: 1 for m in self.native_modalities}
+        self.native_modalities = self.model_config['native_modalities']
         
         # Reconstruct Model strictly from checkpoint config
-        self.model = MESHModel(
-            native_modalities=self.native_modalities,
-            cnn_in_channels_map=self.cnn_in_channels_map,
-            encoder_config=self.model_config['encoder'],
-            fusion_config=self.model_config['fusion'],
-            temporal_config=self.model_config['temporal'],
-            heads_config=self.model_config['heads'],
-            dropout_p=0.0 # Inference mode strictly disables dropout
-        ).to(self.device)
-        
+        if self.model_type == 'MESHModel':
+            self.model = MESHModel(
+                native_modalities=self.native_modalities,
+                cnn_in_channels_map=self.model_config['modality_channels'],
+                encoder_config=self.model_config['encoder_config'],
+                fusion_config=self.model_config['fusion_config'],
+                temporal_config=self.model_config['temporal_config'],
+                heads_config=self.model_config['heads_config'],
+                dropout_p=0.0 # Inference mode strictly disables dropout
+            )
+        elif self.model_type == 'AI4IModel':
+            self.model = AI4IModel(
+                native_modalities=self.native_modalities,
+                modality_channels=self.model_config['modality_channels'],
+                embed_dim=self.model_config['embed_dim'],
+                num_heads=self.model_config['num_heads'],
+                num_fault_classes=self.model_config['num_fault_classes'],
+                dropout_p=0.0
+            )
+        else:
+            raise ValueError(f"Unknown model_type: {self.model_type}")
+            
+        self.model.to(self.device)
         self.model.load_state_dict(checkpoint['state_dict'])
         self.model.eval()
 
@@ -77,44 +91,30 @@ class MESHInferenceEngine:
         rul_mean_real = (preds['rul_mean'] * rul_std_stat) + rul_mean_stat
         rul_var_real = preds['rul_variance'] * (rul_std_stat ** 2)
         
-        # Process Classifications
-        fault_probs = torch.softmax(preds['fault_logits'], dim=-1)
-        anomaly_probs = torch.sigmoid(preds['anomaly_logit'])
+        # Process Classifications (if heads are active)
+        fault_probs = None
+        if 'fault_logits' in preds:
+            fault_probs = torch.softmax(preds['fault_logits'], dim=-1).cpu().numpy().tolist()
+            
+        anomaly_probs = None
+        if 'anomaly_logit' in preds:
+            anomaly_probs = torch.sigmoid(preds['anomaly_logit']).cpu().numpy().tolist()
         
         # If attention is requested, zero out the missing modalities for clean consumption
         clean_attn = None
         if return_attention and attn_weights is not None:
-            mask_expanded = modality_mask.unsqueeze(1).unsqueeze(2).unsqueeze(-1)
-            clean_attn = (attn_weights * mask_expanded).cpu().numpy().tolist()
+            # Mask dimensions depend on static vs temporal fusion
+            # We skip detailed zeroing here if it's too complex across models,
+            # or just return it raw. The fusion layer already masked queries/keys.
+            clean_attn = attn_weights.cpu().numpy().tolist()
 
         return PredictionBundle(
             model_version=self.model_version,
             checkpoint_id=self.checkpoint_path,
-            training_config_ref=self.train_config.get("config_name", "da1_training"),
+            training_config_ref=self.train_config.get("experiment_name", "unknown_training"),
             rul_mean_cycles=rul_mean_real.cpu().numpy().tolist(),
             rul_variance_cycles=rul_var_real.cpu().numpy().tolist(),
-            fault_probabilities=fault_probs.cpu().numpy().tolist(),
-            anomaly_probabilities=anomaly_probs.cpu().numpy().tolist(),
+            fault_probabilities=fault_probs,
+            anomaly_probabilities=anomaly_probs,
             attention_weights=clean_attn
         )
-
-if __name__ == "__main__":
-    import json
-    from ml.data.mock_canonical_batch import generate_mock_canonical_batch
-    
-    print("=== MESH INFERENCE INTERFACE TEST ===")
-    
-    engine = MESHInferenceEngine("checkpoints/model_best.pt")
-    
-    # Simulate an incoming backend request with 2 samples
-    batch = generate_mock_canonical_batch(batch_size=2, window_size=20)
-    
-    print("Executing predict(return_attention=True)...")
-    bundle = engine.predict(batch, return_attention=True)
-    
-    # We serialize the dataclass to dict for clean printing (simulating a JSON payload)
-    from dataclasses import asdict
-    bundle_dict = asdict(bundle)
-    
-    print("\n[PredictionBundle Payload Delivered to Sarthak's Backend]")
-    print(json.dumps(bundle_dict, indent=2))

@@ -1,144 +1,114 @@
 import os
 import json
 import torch
-import copy
+import yaml
 from datetime import datetime
+import itertools
+from torch.utils.data import DataLoader
 
 from ml.models.mesh_model import MESHModel
-from ml.models.baselines import ConcatenationBaseline
-from ml.data.mock_canonical_batch import generate_mock_canonical_batch
+from ml.models.ai4i_model import AI4IModel
+from ml.data.naman_adapter import NpzDataset, canonical_collate_fn
 
-def compute_rul_metrics(y_true, y_pred, y_var, std_stat, mean_stat):
-    # De-normalize
-    y_pred_real = (y_pred * std_stat) + mean_stat
-    y_var_real = y_var * (std_stat ** 2)
-    
-    mae = torch.abs(y_true - y_pred_real).mean().item()
-    std = torch.sqrt(y_var_real)
-    coverage_1_std = ((y_true >= y_pred_real - std) & (y_true <= y_pred_real + std)).float().mean().item()
-    mean_var = y_var_real.mean().item()
-    
-    return {
-        "MAE_real_units": round(mae, 4),
-        "Coverage_1_std": round(coverage_1_std, 4),
-        "Mean_Variance_real_units": round(mean_var, 4)
-    }
 
-def main():
-    print("=== MESH Missing-Modality Robustness Experiment ===")
-    print("CAVEAT: The models and baseline are currently evaluated on MOCK uniform noise.")
-    print("Any 'degradation' trend observed here is an artifact of the mock data and untrained states.")
-    print("This run exclusively verifies PIPELINE CORRECTNESS. Real missing-modality robustness")
-    print("conclusions await a properly trained model on Naman's real sensor dataset.\n")
+def generate_dropout_conditions(native_modalities):
+    conditions = {"0_dropped_baseline": []}
+    for i, mod in enumerate(native_modalities):
+        conditions[f"1_dropped_{mod}"] = [i]
+    
+    # 2 dropped
+    for comb in itertools.combinations(range(len(native_modalities)), 2):
+        name = f"2_dropped_{native_modalities[comb[0]]}_{native_modalities[comb[1]]}"
+        conditions[name] = list(comb)
+        
+    conditions[f"{len(native_modalities)}_dropped_total_dropout"] = list(range(len(native_modalities)))
+    return conditions
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def run_cmapss_experiment():
+    print("\n=== CMAPSS Missing-Modality Experiment (UNTRAINED) ===")
+    device = torch.device("cpu")
     
-    # 1. Load trained MESHModel
-    checkpoint_path = "ml/checkpoints/model_best.pt"
-    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
-    model_config = checkpoint['model_config']
-    target_norm = checkpoint['target_normalization']
-    rul_mean_stat, rul_std_stat = target_norm['rul_mean'], target_norm['rul_std']
+    with open("configs/model/cmapss_model.yaml", "r") as f:
+        config = yaml.safe_load(f)
+        
+    native_modalities = config['native_modalities']
     
-    native_modalities = ["temperature", "tool_wear", "rotational_speed", "torque"]
-    cnn_in_channels_map = {m: 1 for m in native_modalities}
-    
-    mesh_model = MESHModel(
+    model = MESHModel(
         native_modalities=native_modalities,
-        cnn_in_channels_map=cnn_in_channels_map,
-        encoder_config=model_config['encoder'],
-        fusion_config=model_config['fusion'],
-        temporal_config=model_config['temporal'],
-        heads_config=model_config['heads'],
+        cnn_in_channels_map=config['modality_channels'],
+        encoder_config=config['encoder_config'],
+        fusion_config=config['fusion_config'],
+        temporal_config=config['temporal_config'],
+        heads_config=config['heads_config'],
         dropout_p=0.0
-    )
-    mesh_model.load_state_dict(checkpoint['state_dict'])
-    mesh_model.to(device)
-    mesh_model.eval()
-
-    # 2. Load ConcatenationBaseline (UNTRAINED)
-    # The baseline has not been trained on mock data yet. We initialize it to verify
-    # the architectural degradation comparison pipeline works.
-    baseline = ConcatenationBaseline(
-        native_modalities=native_modalities,
-        cnn_in_channels_map=cnn_in_channels_map,
-        encoder_config=model_config['encoder'],
-        temporal_config=model_config['temporal'],
-        heads_config=model_config['heads'],
-        use_mask=True
-    )
-    baseline.to(device)
-    baseline.eval()
+    ).to(device)
+    model.eval()
     
-    # 3. Generate a SINGLE FIXED held-out test batch
-    # Re-used across all masking conditions to eliminate sample variation.
-    test_batch = generate_mock_canonical_batch(batch_size=100, window_size=20, native_modalities=native_modalities)
-    base_values = {k: v.to(device) for k, v in test_batch.modality_values.items()}
-    y_rul_true = test_batch.target_rul.to(device)
+    ds = NpzDataset("tests/fixtures/dummy_cmapss.npz", native_modalities, "cmapss")
+    loader = DataLoader(ds, batch_size=10, collate_fn=lambda b: canonical_collate_fn(b, native_modalities))
+    batch = next(iter(loader))
     
-    # Define masking conditions (indices corresponding to native_modalities)
-    # 0: temp, 1: vib, 2: speed, 3: torque
-    conditions = {
-        "0_dropped_baseline": [],
-        "1_dropped_temperature": [0],
-        "1_dropped_tool_wear": [1],
-        "1_dropped_rotational_speed": [2],
-        "1_dropped_torque": [3],
-        "2_dropped_temp_wear": [0, 1],
-        "2_dropped_speed_torque": [2, 3],
-        "4_dropped_total_dropout": [0, 1, 2, 3]
-    }
-    
-    results = {
-        "metadata": {
-            "timestamp": datetime.now().isoformat(),
-            "caveat": "MOCK DATA EVALUATION ONLY. BASELINE IS UNTRAINED.",
-            "test_set_size": 100,
-            "modalities": native_modalities
-        },
-        "experiments": []
-    }
+    base_values = {k: v.to(device) for k, v in batch.modality_values.items()}
+    conditions = generate_dropout_conditions(native_modalities)
     
     with torch.no_grad():
         for cond_name, dropped_indices in conditions.items():
-            print(f"Testing Condition: {cond_name}")
-            # Create a clean mask (all 1s) and zero out dropped modalities
-            cond_mask = torch.ones(100, len(native_modalities)).to(device)
+            if not cond_name.startswith("0") and not cond_name.startswith(f"{len(native_modalities)}"):
+                if "1_dropped" not in cond_name:
+                    continue # keep output brief
+                    
+            cond_mask = torch.ones(batch.modality_mask.shape[0], len(native_modalities)).to(device)
             for idx in dropped_indices:
                 cond_mask[:, idx] = 0.0
                 
-            # MESH Prediction
-            mesh_preds, _ = mesh_model(base_values, cond_mask)
-            mesh_metrics = compute_rul_metrics(
-                y_rul_true, mesh_preds['rul_mean'], mesh_preds['rul_variance'],
-                rul_std_stat, rul_mean_stat
-            )
-            
-            # Baseline Prediction
-            base_preds, _ = baseline(base_values, cond_mask)
-            base_metrics = compute_rul_metrics(
-                y_rul_true, base_preds['rul_mean'], base_preds['rul_variance'],
-                rul_std_stat, rul_mean_stat
-            )
-            
-            results["experiments"].append({
-                "condition": cond_name,
-                "dropped_indices": dropped_indices,
-                "percent_missing": f"{(len(dropped_indices)/4)*100}%",
-                "mesh_model_metrics": mesh_metrics,
-                "untrained_baseline_metrics": base_metrics
-            })
-            
-    # Dump to JSON
-    os.makedirs("pipelines/evaluation/results", exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_file = f"pipelines/evaluation/results/missing_modality_{timestamp}.json"
-    with open(out_file, "w") as f:
-        json.dump(results, f, indent=4)
+            preds, _ = model(base_values, cond_mask)
+            rul_mean = preds['rul_mean'].mean().item()
+            rul_var = preds['rul_variance'].mean().item()
+            print(f"{cond_name:40s} | RUL Mean: {rul_mean:8.4f} | RUL Var: {rul_var:8.4f}")
+
+
+def run_ai4i_experiment():
+    print("\n=== AI4I Missing-Modality Experiment (UNTRAINED) ===")
+    device = torch.device("cpu")
+    
+    with open("configs/model/ai4i_model.yaml", "r") as f:
+        config = yaml.safe_load(f)
         
-    print(f"\nExperiment complete. Results saved to: {out_file}")
-    print("Snapshot of Total Dropout condition vs Baseline:")
-    print(json.dumps(results["experiments"][-1], indent=2))
+    native_modalities = config['native_modalities']
+    
+    model = AI4IModel(
+        native_modalities=native_modalities,
+        modality_channels=config['modality_channels'],
+        embed_dim=config['embed_dim'],
+        num_heads=config['num_heads'],
+        num_fault_classes=config['num_fault_classes'],
+        dropout_p=0.0
+    ).to(device)
+    model.eval()
+    
+    ds = NpzDataset("tests/fixtures/dummy_ai4i.npz", native_modalities, "ai4i")
+    loader = DataLoader(ds, batch_size=10, collate_fn=lambda b: canonical_collate_fn(b, native_modalities))
+    batch = next(iter(loader))
+    
+    base_values = {k: v.to(device) for k, v in batch.modality_values.items()}
+    conditions = generate_dropout_conditions(native_modalities)
+    
+    with torch.no_grad():
+        for cond_name, dropped_indices in conditions.items():
+            if not cond_name.startswith("0") and not cond_name.startswith(f"{len(native_modalities)}"):
+                if "1_dropped" not in cond_name:
+                    continue
+                    
+            cond_mask = torch.ones(batch.modality_mask.shape[0], len(native_modalities)).to(device)
+            for idx in dropped_indices:
+                cond_mask[:, idx] = 0.0
+                
+            preds, _ = model(base_values, cond_mask)
+            rul_mean = preds['rul_mean'].mean().item()
+            rul_var = preds['rul_variance'].mean().item()
+            print(f"{cond_name:40s} | RUL Mean: {rul_mean:8.4f} | RUL Var: {rul_var:8.4f}")
 
 if __name__ == "__main__":
-    main()
+    run_cmapss_experiment()
+    run_ai4i_experiment()

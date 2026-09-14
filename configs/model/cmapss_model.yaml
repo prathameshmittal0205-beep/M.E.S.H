@@ -1,0 +1,43 @@
+# CMAPSS Model Configuration (Temporal)
+model_type: "MESHModel"
+native_modalities:
+  - "temperatures"
+  - "pressures"
+  - "speeds"
+  - "gas_flow"
+  - "operational_settings"
+
+modality_channels:
+  temperatures: 4
+  pressures: 5
+  speeds: 6
+  gas_flow: 6
+  operational_settings: 3
+
+# Encoders
+encoder_config:
+  cnn_out_channels: 16
+  cnn_kernel_size: 3
+  bilstm_hidden_size: 32
+
+# Fusion
+fusion_config:
+  embed_dim: 64
+  num_heads: 4
+  dropout: 0.15
+  
+# Temporal
+temporal_config:
+  d_model: 64
+  nhead: 4
+  num_layers: 2
+  dim_feedforward: 128
+  dropout: 0.15
+
+# Heads
+heads_config:
+  rul_hidden_dim: 64
+  num_fault_classes: 0 # Disabled for CMAPSS
+  # anomaly_hidden_dim is completely omitted, so it will be disabled
+
+dropout_p: 0.15

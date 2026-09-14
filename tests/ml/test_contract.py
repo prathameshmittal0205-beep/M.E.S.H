@@ -119,10 +119,13 @@ def test_checkpoint_roundtrip(tmp_path):
     
     # Create the config mapping exactly as interface.py expects it from YAML
     yaml_config = {
-        'encoder': config['encoder_config'],
-        'fusion': config['fusion_config'],
-        'temporal': config['temporal_config'],
-        'heads': config['heads_config']
+        'model_type': 'MESHModel',
+        'native_modalities': config['native_modalities'],
+        'modality_channels': config['cnn_in_channels_map'],
+        'encoder_config': config['encoder_config'],
+        'fusion_config': config['fusion_config'],
+        'temporal_config': config['temporal_config'],
+        'heads_config': config['heads_config']
     }
     
     checkpoint = {

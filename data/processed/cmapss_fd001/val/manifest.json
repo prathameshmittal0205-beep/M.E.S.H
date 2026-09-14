@@ -1,0 +1,147 @@
+{
+  "dataset_id": "nasa_cmapss_fd001",
+  "split_name": "val",
+  "sample_count": 746,
+  "run_count": 20,
+  "runs": [
+    "unit_001",
+    "unit_005",
+    "unit_011",
+    "unit_013",
+    "unit_019",
+    "unit_023",
+    "unit_031",
+    "unit_032",
+    "unit_034",
+    "unit_040",
+    "unit_045",
+    "unit_046",
+    "unit_054",
+    "unit_071",
+    "unit_074",
+    "unit_077",
+    "unit_078",
+    "unit_081",
+    "unit_084",
+    "unit_091"
+  ],
+  "window_size": 20,
+  "stride": 5,
+  "preprocessor_version": "v1.0_window20_stride5",
+  "scaler_version": "1.0.0",
+  "files": {
+    "canonical_data_npz": "data.npz",
+    "intermediate_pickle": "samples.pkl"
+  },
+  "modalities": {
+    "temperatures": {
+      "channels": [
+        "s_1",
+        "s_2",
+        "s_3",
+        "s_4"
+      ],
+      "units": [
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R"
+      ],
+      "shape": [
+        746,
+        20,
+        4
+      ]
+    },
+    "pressures": {
+      "channels": [
+        "s_5",
+        "s_6",
+        "s_7",
+        "s_10",
+        "s_11"
+      ],
+      "units": [
+        "psia",
+        "psia",
+        "psia",
+        "--",
+        "psia"
+      ],
+      "shape": [
+        746,
+        20,
+        5
+      ]
+    },
+    "speeds": {
+      "channels": [
+        "s_8",
+        "s_9",
+        "s_13",
+        "s_14",
+        "s_18",
+        "s_19"
+      ],
+      "units": [
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm"
+      ],
+      "shape": [
+        746,
+        20,
+        6
+      ]
+    },
+    "gas_flow": {
+      "channels": [
+        "s_12",
+        "s_15",
+        "s_16",
+        "s_17",
+        "s_20",
+        "s_21"
+      ],
+      "units": [
+        "pps/psi",
+        "--",
+        "--",
+        "--",
+        "lbm/s",
+        "lbm/s"
+      ],
+      "shape": [
+        746,
+        20,
+        6
+      ]
+    },
+    "operational_settings": {
+      "channels": [
+        "setting_1",
+        "setting_2",
+        "setting_3"
+      ],
+      "units": [
+        "altitude",
+        "mach",
+        "TRA"
+      ],
+      "shape": [
+        746,
+        20,
+        3
+      ]
+    }
+  },
+  "target_statistics": {
+    "rul_min": 0.0,
+    "rul_max": 249.0,
+    "rul_mean": 97.37
+  },
+  "created_at": "2026-09-14T06:24:37.962990+00:00"
+}

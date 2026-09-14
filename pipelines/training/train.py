@@ -141,13 +141,17 @@ def main():
     if 'dataset_path' in train_config and 'dataset_name' in train_config:
         from ml.data.naman_adapter import NpzDataset, canonical_collate_fn
         from torch.utils.data import DataLoader
-        print(f"Loading real dataset from {train_config['dataset_path']}...")
-        dataset = NpzDataset(train_config['dataset_path'], model_config['native_modalities'], train_config['dataset_name'])
         
-        # Since we only have a 20-sample fixture, we just split it into 16 train, 4 val for the mechanism check.
-        train_size = int(0.8 * len(dataset))
-        val_size = len(dataset) - train_size
-        train_dataset, val_dataset = torch.utils.data.random_split(dataset, [train_size, val_size])
+        train_path = train_config['dataset_path']
+        val_path = train_path.replace('/train/', '/val/')
+        
+        print(f"Loading train dataset from {train_path}...")
+        train_dataset = NpzDataset(train_path, model_config['native_modalities'], train_config['dataset_name'])
+        
+        print(f"Loading val dataset from {val_path}...")
+        val_dataset = NpzDataset(val_path, model_config['native_modalities'], train_config['dataset_name'])
+        
+        print(f"Train samples: {len(train_dataset)} | Val samples: {len(val_dataset)}")
         
         train_loader = DataLoader(
             train_dataset, 
@@ -180,7 +184,13 @@ def main():
     for epoch in range(epochs):
         # Training Phase
         model.train()
-        train_loss = 0.0
+        epoch_train_loss = 0.0
+        epoch_rul_loss = 0.0
+        epoch_fault_loss = 0.0
+        epoch_anomaly_loss = 0.0
+        epoch_rul_variance_sum = 0.0
+        epoch_rul_mae_sum = 0.0
+        epoch_rul_count = 0
         
         for step, batch in enumerate(train_loader):
             optimizer.zero_grad()
@@ -228,7 +238,10 @@ def main():
             if w.get('rul', 0) > 0 and 'rul_mean' in preds and batch.target_rul is not None:
                 y_rul = batch.target_rul.to(device)
                 y_rul_scaled = (y_rul - rul_mean_stat) / (rul_std_stat + 1e-6)
-                loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
+                if epoch < train_config.get('variance_warmup_epochs', 0):
+                    loss_rul = F.mse_loss(preds['rul_mean'], y_rul_scaled)
+                else:
+                    loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
                 loss += w['rul'] * loss_rul
                 
             # Fault Loss
@@ -269,19 +282,27 @@ def main():
             PREV_STATS = {
                 'epoch': epoch,
                 'step': step,
+                'loss_rul': loss_rul.item(),
+                'loss_fault': loss_fault.item(),
+                'loss_anomaly': loss_anomaly.item()
             }
             if 'rul_variance' in preds:
                 PREV_STATS['rul_variance_min'] = preds['rul_variance'].min().item()
             if 'rul_mean' in preds:
-                PREV_STATS['rul_mean_min'] = preds['rul_mean'].min().item()
                 PREV_STATS['rul_mean_max'] = preds['rul_mean'].max().item()
             
-            # Backward pass
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), clip_grad)
+            
+            if clip_grad > 0:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), clip_grad)
+                
             optimizer.step()
             
-            train_loss += loss.item()
+            epoch_train_loss += loss.item()
+            epoch_rul_loss += loss_rul.item()
+            epoch_fault_loss += loss_fault.item()
+            epoch_anomaly_loss += loss_anomaly.item()
+            
             tracker.log_metrics({
                 'loss/total': loss.item(),
                 'loss/rul': loss_rul.item(),
@@ -290,7 +311,20 @@ def main():
             }, global_step, prefix="train")
             global_step += 1
             
-        avg_train_loss = train_loss / len(train_loader)
+            if 'rul_mean' in preds and batch.target_rul is not None:
+                # Accumulate for epoch average
+                epoch_rul_variance_sum += preds['rul_variance'].mean().item()
+                epoch_rul_mae_sum += torch.abs((preds['rul_mean'] * rul_std_stat + rul_mean_stat).squeeze() - batch.target_rul.squeeze().to(device)).mean().item()
+                epoch_rul_count += 1
+                
+        # Calculate epoch averages
+        avg_train_loss = epoch_train_loss / len(train_loader)
+        if epoch_rul_count > 0:
+            avg_train_var = epoch_rul_variance_sum / epoch_rul_count
+            avg_train_mae = epoch_rul_mae_sum / epoch_rul_count
+        else:
+            avg_train_var = 0.0
+            avg_train_mae = 0.0
         
         # Validation Phase
         model.eval()
@@ -311,7 +345,10 @@ def main():
                 loss_rul = torch.tensor(0.0, device=device)
                 if w.get('rul', 0) > 0 and 'rul_mean' in preds and batch.target_rul is not None:
                     y_rul_scaled = (y_rul - rul_mean_stat) / (rul_std_stat + 1e-6)
-                    loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
+                    if epoch < train_config.get('variance_warmup_epochs', 0):
+                        loss_rul = F.mse_loss(preds['rul_mean'], y_rul_scaled)
+                    else:
+                        loss_rul = (0.5 * (torch.log(preds['rul_variance']) + ((y_rul_scaled - preds['rul_mean'])**2 / preds['rul_variance']))).mean()
                     loss += w['rul'] * loss_rul
                     
                 loss_fault = torch.tensor(0.0, device=device)
@@ -326,8 +363,19 @@ def main():
                 val_loss += loss.item()
                 
         avg_val_loss = val_loss / len(val_loader)
+        
+        avg_rul_loss = epoch_rul_loss / len(train_loader)
+        avg_fault_loss = epoch_fault_loss / len(train_loader)
+        avg_anomaly_loss = epoch_anomaly_loss / len(train_loader)
+        
+        # Diagnostic prints for Variance and MAE
+        components_str = f"[RUL: {avg_rul_loss:.4f} | Fault: {avg_fault_loss:.4f} | Anomaly: {avg_anomaly_loss:.4f}]"
+        if epoch_rul_count > 0:
+            print(f"Epoch [{epoch+1}/{epochs}] - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f} | Train MAE: {avg_train_mae:.4f} | Train Var: {avg_train_var:.4f}")
+        else:
+            print(f"Epoch [{epoch+1}/{epochs}] - Train Loss: {avg_train_loss:.4f} {components_str} | Val Loss: {avg_val_loss:.4f}")
+        
         tracker.log_metrics({'loss/total': avg_val_loss}, epoch, prefix="val")
-        print(f"Epoch [{epoch+1}/{epochs}] - Train Loss: {avg_train_loss:.4f} | Val Loss: {avg_val_loss:.4f}")
         
         # Save best checkpoint
         if avg_val_loss < best_val_loss:

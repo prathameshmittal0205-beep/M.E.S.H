@@ -50,8 +50,6 @@ class NpzDataset(Dataset):
         
         if self.target_rul is not None:
             sample["target_rul"] = self.target_rul[idx]
-        elif hasattr(self, "target_degradation") and self.target_degradation is not None:
-            sample["target_rul"] = self.target_degradation[idx]
             
         if self.target_binary_failure is not None:
             sample["target_binary_failure"] = self.target_binary_failure[idx]

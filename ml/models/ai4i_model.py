@@ -36,10 +36,12 @@ class AI4IModel(nn.Module):
         embed_dim: int = 128,
         num_heads: int = 4,
         num_fault_classes: int = 6,
+        enable_rul: bool = False,
         dropout_p: float = 0.15
     ):
         super().__init__()
         self.native_modalities = native_modalities
+        self.enable_rul = enable_rul
         
         # 1. Per-modality static encoders
         self.encoders = nn.ModuleDict()
@@ -58,9 +60,9 @@ class AI4IModel(nn.Module):
             dropout=dropout_p
         )
         
-        # 3. Task Heads (Note: we bypass the TransformerEncoderAggregator)
-        # The fusion outputs [B, 1, embed_dim], which we squeeze to [B, embed_dim]
-        self.rul_head = RULHead(in_features=embed_dim, hidden_dim=64, dropout_p=dropout_p)
+        # 3. Task Heads
+        if self.enable_rul:
+            self.rul_head = RULHead(in_features=embed_dim, hidden_dim=64, dropout_p=dropout_p)
         self.fault_head = FaultClassificationHead(in_features=embed_dim, num_classes=num_fault_classes, hidden_dim=64, dropout_p=dropout_p)
         self.anomaly_head = AnomalyHead(in_features=embed_dim, hidden_dim=64, dropout_p=dropout_p)
 
@@ -99,9 +101,10 @@ class AI4IModel(nn.Module):
         outputs = {}
         
         # RUL (Mean and Variance)
-        rul_mean, rul_var = self.rul_head(fused_embedding)
-        outputs['rul_mean'] = rul_mean
-        outputs['rul_variance'] = rul_var
+        if self.enable_rul:
+            rul_mean, rul_var = self.rul_head(fused_embedding)
+            outputs['rul_mean'] = rul_mean
+            outputs['rul_variance'] = rul_var
         
         # Fault Class Logits
         fault_logits = self.fault_head(fused_embedding)

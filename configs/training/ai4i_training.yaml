@@ -1,10 +1,12 @@
 experiment_name: "ai4i_baseline"
 log_dir: "logs/"
-dataset_path: "tests/fixtures/ai4i2020_sample.npz"
+checkpoint_dir: "checkpoints/ai4i/"
+dataset_path: "data/processed/ai4i2020/train/data.npz"
 dataset_name: "ai4i"
 
-batch_size: 4
-epochs: 2
+batch_size: 32
+epochs: 3
+variance_warmup_epochs: 1
 learning_rate: 0.001
 weight_decay: 0.0001
 clip_grad: 1.0
@@ -16,8 +18,6 @@ loss_weights:
 
 modality_dropout_p: 0.1
 
-# TODO(Naman Data): These stats were computed from a 20-sample toy fixture!
-# MUST be recomputed from the real training split once it exists.
 target_normalization:
-  rul_mean: 96.0
-  rul_std: 57.0
+  rul_mean: 107.8763
+  rul_std: 63.4015

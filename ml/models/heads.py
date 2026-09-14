@@ -26,8 +26,8 @@ class RULHead(nn.Module):
         mean = out[:, 0:1]
         log_var = out[:, 1:2]
         
-        # Clamp log_var to prevent extreme variance values (both too close to 0 or too large)
-        log_var = torch.clamp(log_var, min=-10.0, max=10.0)
+        # Clamp log_var to prevent extreme variance values
+        log_var = torch.clamp(log_var, min=-1.0, max=5.0)
         
         # Enforce positive variance (exp or softplus, using softplus for stability)
         variance = F.softplus(log_var) + 1e-6

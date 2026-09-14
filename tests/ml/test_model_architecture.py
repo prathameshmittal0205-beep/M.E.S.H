@@ -87,17 +87,18 @@ def test_head_shapes(model_fixture, batch_fixture, is_ai4i, request):
     
     B = mod_values[list(mod_values.keys())[0]].shape[0]
     
-    assert "rul_mean" in preds
-    assert "rul_variance" in preds
-    assert preds["rul_mean"].shape == (B, 1)
-    assert preds["rul_variance"].shape == (B, 1)
-    
     if is_ai4i:
+        assert "rul_mean" not in preds
+        assert "rul_variance" not in preds
         assert "anomaly_logit" in preds
         assert "fault_logits" in preds
         assert preds["anomaly_logit"].shape == (B, 1)
         assert preds["fault_logits"].shape == (B, 6) # 6 fault classes
     else:
+        assert "rul_mean" in preds
+        assert "rul_variance" in preds
+        assert preds["rul_mean"].shape == (B, 1)
+        assert preds["rul_variance"].shape == (B, 1)
         assert "anomaly_logit" not in preds
         assert "fault_logits" not in preds
 
@@ -143,8 +144,9 @@ def test_all_modalities_masked_no_nan(model_fixture, batch_fixture, request):
     with torch.no_grad():
         preds, _ = model(mod_values, mask)
         
-    assert not torch.isnan(preds["rul_mean"]).any()
-    assert not torch.isnan(preds["rul_variance"]).any()
+    if "rul_mean" in preds:
+        assert not torch.isnan(preds["rul_mean"]).any()
+        assert not torch.isnan(preds["rul_variance"]).any()
     if "anomaly_logit" in preds:
         assert not torch.isnan(preds["anomaly_logit"]).any()
     if "fault_logits" in preds:
@@ -163,8 +165,11 @@ def test_eval_determinism(model_fixture, batch_fixture, request):
         preds1, _ = model(mod_values, mask)
         preds2, _ = model(mod_values, mask)
         
-    assert torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
-    assert torch.allclose(preds1["rul_variance"], preds2["rul_variance"])
+    if "rul_mean" in preds1:
+        assert torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
+        assert torch.allclose(preds1["rul_variance"], preds2["rul_variance"])
+    if "fault_logits" in preds1:
+        assert torch.allclose(preds1["fault_logits"], preds2["fault_logits"])
 
 @pytest.mark.parametrize("model_fixture,batch_fixture", [
     ("cmapss_model", "cmapss_sample_batch"),
@@ -179,7 +184,10 @@ def test_train_non_determinism(model_fixture, batch_fixture, request):
         preds1, _ = model(mod_values, mask)
         preds2, _ = model(mod_values, mask)
         
-    assert not torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
+    if "rul_mean" in preds1:
+        assert not torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
+    if "fault_logits" in preds1:
+        assert not torch.allclose(preds1["fault_logits"], preds2["fault_logits"])
 
 @pytest.mark.parametrize("model_fixture,batch_fixture", [
     ("cmapss_model", "cmapss_sample_batch"),
@@ -198,5 +206,8 @@ def test_train_fixed_seed_determinism(model_fixture, batch_fixture, request):
     with torch.no_grad():
         preds2, _ = model(mod_values, mask)
         
-    assert torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
-    assert torch.allclose(preds1["rul_variance"], preds2["rul_variance"])
+    if "rul_mean" in preds1:
+        assert torch.allclose(preds1["rul_mean"], preds2["rul_mean"])
+        assert torch.allclose(preds1["rul_variance"], preds2["rul_variance"])
+    if "fault_logits" in preds1:
+        assert torch.allclose(preds1["fault_logits"], preds2["fault_logits"])

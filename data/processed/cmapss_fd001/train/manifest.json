@@ -1,0 +1,207 @@
+{
+  "dataset_id": "nasa_cmapss_fd001",
+  "split_name": "train",
+  "sample_count": 3040,
+  "run_count": 80,
+  "runs": [
+    "unit_002",
+    "unit_003",
+    "unit_004",
+    "unit_006",
+    "unit_007",
+    "unit_008",
+    "unit_009",
+    "unit_010",
+    "unit_012",
+    "unit_014",
+    "unit_015",
+    "unit_016",
+    "unit_017",
+    "unit_018",
+    "unit_020",
+    "unit_021",
+    "unit_022",
+    "unit_024",
+    "unit_025",
+    "unit_026",
+    "unit_027",
+    "unit_028",
+    "unit_029",
+    "unit_030",
+    "unit_033",
+    "unit_035",
+    "unit_036",
+    "unit_037",
+    "unit_038",
+    "unit_039",
+    "unit_041",
+    "unit_042",
+    "unit_043",
+    "unit_044",
+    "unit_047",
+    "unit_048",
+    "unit_049",
+    "unit_050",
+    "unit_051",
+    "unit_052",
+    "unit_053",
+    "unit_055",
+    "unit_056",
+    "unit_057",
+    "unit_058",
+    "unit_059",
+    "unit_060",
+    "unit_061",
+    "unit_062",
+    "unit_063",
+    "unit_064",
+    "unit_065",
+    "unit_066",
+    "unit_067",
+    "unit_068",
+    "unit_069",
+    "unit_070",
+    "unit_072",
+    "unit_073",
+    "unit_075",
+    "unit_076",
+    "unit_079",
+    "unit_080",
+    "unit_082",
+    "unit_083",
+    "unit_085",
+    "unit_086",
+    "unit_087",
+    "unit_088",
+    "unit_089",
+    "unit_090",
+    "unit_092",
+    "unit_093",
+    "unit_094",
+    "unit_095",
+    "unit_096",
+    "unit_097",
+    "unit_098",
+    "unit_099",
+    "unit_100"
+  ],
+  "window_size": 20,
+  "stride": 5,
+  "preprocessor_version": "v1.0_window20_stride5",
+  "scaler_version": "1.0.0",
+  "files": {
+    "canonical_data_npz": "data.npz",
+    "intermediate_pickle": "samples.pkl"
+  },
+  "modalities": {
+    "temperatures": {
+      "channels": [
+        "s_1",
+        "s_2",
+        "s_3",
+        "s_4"
+      ],
+      "units": [
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R"
+      ],
+      "shape": [
+        3040,
+        20,
+        4
+      ]
+    },
+    "pressures": {
+      "channels": [
+        "s_5",
+        "s_6",
+        "s_7",
+        "s_10",
+        "s_11"
+      ],
+      "units": [
+        "psia",
+        "psia",
+        "psia",
+        "--",
+        "psia"
+      ],
+      "shape": [
+        3040,
+        20,
+        5
+      ]
+    },
+    "speeds": {
+      "channels": [
+        "s_8",
+        "s_9",
+        "s_13",
+        "s_14",
+        "s_18",
+        "s_19"
+      ],
+      "units": [
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm"
+      ],
+      "shape": [
+        3040,
+        20,
+        6
+      ]
+    },
+    "gas_flow": {
+      "channels": [
+        "s_12",
+        "s_15",
+        "s_16",
+        "s_17",
+        "s_20",
+        "s_21"
+      ],
+      "units": [
+        "pps/psi",
+        "--",
+        "--",
+        "--",
+        "lbm/s",
+        "lbm/s"
+      ],
+      "shape": [
+        3040,
+        20,
+        6
+      ]
+    },
+    "operational_settings": {
+      "channels": [
+        "setting_1",
+        "setting_2",
+        "setting_3"
+      ],
+      "units": [
+        "altitude",
+        "mach",
+        "TRA"
+      ],
+      "shape": [
+        3040,
+        20,
+        3
+      ]
+    }
+  },
+  "target_statistics": {
+    "rul_min": 0.0,
+    "rul_max": 342.0,
+    "rul_mean": 100.3595
+  },
+  "created_at": "2026-09-14T06:24:36.887204+00:00"
+}

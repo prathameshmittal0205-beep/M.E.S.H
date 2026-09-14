@@ -23,6 +23,42 @@ data/interim/*
 data/processed/*
 !data/processed/.gitkeep
 
+# Explicit deliverables carve-outs
+!data/processed/splits/
+data/processed/splits/*
+!data/processed/splits/cmapss_fd001_split.json
+!data/processed/splits/ai4i2020_split.json
+
+!data/processed/cmapss_fd001/
+data/processed/cmapss_fd001/*
+!data/processed/cmapss_fd001/train/
+data/processed/cmapss_fd001/train/*
+!data/processed/cmapss_fd001/train/data.npz
+!data/processed/cmapss_fd001/train/manifest.json
+!data/processed/cmapss_fd001/val/
+data/processed/cmapss_fd001/val/*
+!data/processed/cmapss_fd001/val/data.npz
+!data/processed/cmapss_fd001/val/manifest.json
+!data/processed/cmapss_fd001/test/
+data/processed/cmapss_fd001/test/*
+!data/processed/cmapss_fd001/test/data.npz
+!data/processed/cmapss_fd001/test/manifest.json
+
+!data/processed/ai4i2020/
+data/processed/ai4i2020/*
+!data/processed/ai4i2020/train/
+data/processed/ai4i2020/train/*
+!data/processed/ai4i2020/train/data.npz
+!data/processed/ai4i2020/train/manifest.json
+!data/processed/ai4i2020/val/
+data/processed/ai4i2020/val/*
+!data/processed/ai4i2020/val/data.npz
+!data/processed/ai4i2020/val/manifest.json
+!data/processed/ai4i2020/test/
+data/processed/ai4i2020/test/*
+!data/processed/ai4i2020/test/data.npz
+!data/processed/ai4i2020/test/manifest.json
+
 # Models
 ml/checkpoints/*
 !ml/checkpoints/.gitkeep

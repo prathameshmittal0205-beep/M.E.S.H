@@ -1,0 +1,227 @@
+{
+  "dataset_id": "nasa_cmapss_fd001",
+  "split_name": "test",
+  "sample_count": 2279,
+  "run_count": 100,
+  "runs": [
+    "test_unit_001",
+    "test_unit_002",
+    "test_unit_003",
+    "test_unit_004",
+    "test_unit_005",
+    "test_unit_006",
+    "test_unit_007",
+    "test_unit_008",
+    "test_unit_009",
+    "test_unit_010",
+    "test_unit_011",
+    "test_unit_012",
+    "test_unit_013",
+    "test_unit_014",
+    "test_unit_015",
+    "test_unit_016",
+    "test_unit_017",
+    "test_unit_018",
+    "test_unit_019",
+    "test_unit_020",
+    "test_unit_021",
+    "test_unit_022",
+    "test_unit_023",
+    "test_unit_024",
+    "test_unit_025",
+    "test_unit_026",
+    "test_unit_027",
+    "test_unit_028",
+    "test_unit_029",
+    "test_unit_030",
+    "test_unit_031",
+    "test_unit_032",
+    "test_unit_033",
+    "test_unit_034",
+    "test_unit_035",
+    "test_unit_036",
+    "test_unit_037",
+    "test_unit_038",
+    "test_unit_039",
+    "test_unit_040",
+    "test_unit_041",
+    "test_unit_042",
+    "test_unit_043",
+    "test_unit_044",
+    "test_unit_045",
+    "test_unit_046",
+    "test_unit_047",
+    "test_unit_048",
+    "test_unit_049",
+    "test_unit_050",
+    "test_unit_051",
+    "test_unit_052",
+    "test_unit_053",
+    "test_unit_054",
+    "test_unit_055",
+    "test_unit_056",
+    "test_unit_057",
+    "test_unit_058",
+    "test_unit_059",
+    "test_unit_060",
+    "test_unit_061",
+    "test_unit_062",
+    "test_unit_063",
+    "test_unit_064",
+    "test_unit_065",
+    "test_unit_066",
+    "test_unit_067",
+    "test_unit_068",
+    "test_unit_069",
+    "test_unit_070",
+    "test_unit_071",
+    "test_unit_072",
+    "test_unit_073",
+    "test_unit_074",
+    "test_unit_075",
+    "test_unit_076",
+    "test_unit_077",
+    "test_unit_078",
+    "test_unit_079",
+    "test_unit_080",
+    "test_unit_081",
+    "test_unit_082",
+    "test_unit_083",
+    "test_unit_084",
+    "test_unit_085",
+    "test_unit_086",
+    "test_unit_087",
+    "test_unit_088",
+    "test_unit_089",
+    "test_unit_090",
+    "test_unit_091",
+    "test_unit_092",
+    "test_unit_093",
+    "test_unit_094",
+    "test_unit_095",
+    "test_unit_096",
+    "test_unit_097",
+    "test_unit_098",
+    "test_unit_099",
+    "test_unit_100"
+  ],
+  "window_size": 20,
+  "stride": 5,
+  "preprocessor_version": "v1.0_window20_stride5",
+  "scaler_version": "1.0.0",
+  "files": {
+    "canonical_data_npz": "data.npz",
+    "intermediate_pickle": "samples.pkl"
+  },
+  "modalities": {
+    "temperatures": {
+      "channels": [
+        "s_1",
+        "s_2",
+        "s_3",
+        "s_4"
+      ],
+      "units": [
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R",
+        "\u00b0R"
+      ],
+      "shape": [
+        2279,
+        20,
+        4
+      ]
+    },
+    "pressures": {
+      "channels": [
+        "s_5",
+        "s_6",
+        "s_7",
+        "s_10",
+        "s_11"
+      ],
+      "units": [
+        "psia",
+        "psia",
+        "psia",
+        "--",
+        "psia"
+      ],
+      "shape": [
+        2279,
+        20,
+        5
+      ]
+    },
+    "speeds": {
+      "channels": [
+        "s_8",
+        "s_9",
+        "s_13",
+        "s_14",
+        "s_18",
+        "s_19"
+      ],
+      "units": [
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm",
+        "rpm"
+      ],
+      "shape": [
+        2279,
+        20,
+        6
+      ]
+    },
+    "gas_flow": {
+      "channels": [
+        "s_12",
+        "s_15",
+        "s_16",
+        "s_17",
+        "s_20",
+        "s_21"
+      ],
+      "units": [
+        "pps/psi",
+        "--",
+        "--",
+        "--",
+        "lbm/s",
+        "lbm/s"
+      ],
+      "shape": [
+        2279,
+        20,
+        6
+      ]
+    },
+    "operational_settings": {
+      "channels": [
+        "setting_1",
+        "setting_2",
+        "setting_3"
+      ],
+      "units": [
+        "altitude",
+        "mach",
+        "TRA"
+      ],
+      "shape": [
+        2279,
+        20,
+        3
+      ]
+    }
+  },
+  "target_statistics": {
+    "rul_min": 9.0,
+    "rul_max": 321.0,
+    "rul_mean": 132.8118
+  },
+  "created_at": "2026-09-14T06:24:41.477600+00:00"
+}
